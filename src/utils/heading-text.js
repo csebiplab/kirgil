@@ -1,0 +1,20 @@
+export const headingIconText = {
+    map__IconTxt: "Service Areas",
+    projectUs__IconTxt: "Star Project with us",
+    ourServices__IconTxt: "Services",
+    bestServices__IconTxt: "Best Service Company",
+    ourExperience__IconTxt: "Our Experience in Contractors",
+    quality__IconTxt: "Quality of Our Company",
+    trustUs__IconTxt: "Why You Trust Us",
+    GeneralContractors__IconTxt: "The Leading Contractors Company",
+    services__IconTxt: "Services",
+    reviews__IconTxt: "Reviews",
+    gallery__IconTxt: "Our Portfolio Gallery",
+    chooseTheRight__IconTxt: "Choose the Right",
+    AboutUs__IconTxt: "About Us",
+    workingProcess__IconTxt: "Working Process",
+    readyToWork__IconTxt: "Ready to Work with us",
+    costBudgeting__IconTxt: "Cost & Budgeting",
+    factorsToHiringUs__IconTxt: "Factors to Hiring Us",
+    
+}

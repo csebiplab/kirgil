@@ -1,0 +1,12 @@
+.field__style {
+  border-radius: 6px;
+  background: rgba(201, 155, 76, 0.15);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form__part {
+  background: #0d0d0d;
+}
+.bg__color{
+    background: #FFF9EE;
+}
