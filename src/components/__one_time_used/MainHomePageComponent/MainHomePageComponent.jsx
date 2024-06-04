@@ -13,12 +13,13 @@ import KeyServices from "./KeyServices/KeyServices";
 import Services from "./Services/Services";
 import Review from "./Review/Review";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
-import ChoosetheRight from "./ChoosetheRight/ChoosetheRight";
+import ChoosesUs from "./ChoosesUs/ChoosesUs";
 import AboutUs from "./AboutUs/AboutUs";
 import WorkingProcess from "./WorkingProcess/WorkingProcess";
 import WorkWithUs from "./WorkWithUs/WorkWithUs";
 import CostBudgeting from "./CostBudgeting/CostBudgeting";
 import ExteriorContractors from "./ExteriorContractors/ExteriorContractors";
+import ReadyToWork from "./ReadyToWork/ReadyToWork";
 
 const MainHomePageComponent = () => {
   return (
@@ -39,8 +40,17 @@ const MainHomePageComponent = () => {
       <section>
         <ExteriorContractors/>
       </section>
+
       <section>
         <WorkWithUs/>
+      </section>
+
+      <section>
+        <ChoosesUs/>
+      </section>
+
+      <section>
+        <ReadyToWork/>
       </section>
 
       {/* <section>
@@ -93,9 +103,7 @@ const MainHomePageComponent = () => {
         <Review/>
       </section>
 
-      <section>
-        <ChoosetheRight/>
-      </section>
+      
 
       <section>
         <ProjectUs/>

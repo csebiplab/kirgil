@@ -2,7 +2,7 @@
 
 import { headingIconText } from "@/utils/heading-text";
 import React from "react";
-import "./ChoosetheRight.css";
+import "./ChoosesUs.css";
 
 import Image from "next/image";
 import HeadingIcon from "@/components/ui/HeadingIcon";
@@ -60,38 +60,35 @@ const easyPool = [
   },
 ];
 
-const ChoosetheRight = () => {
+const ChoosesUs = () => {
   return (
     <div className="">
-      <div className="container banner bg-dark-200">
-        <div className="banner-content 2xl:py-20 py-10 shadow-sm md:mx-0 xs:mx-[35px] ">
+      <div className="container">
+        <div className="2xl:py-20 py-10 shadow-sm md:mx-0 xs:mx-[35px] ">
           <div className=" grid md:grid-cols-3 2xl:gap-[50px] md:gap-[30px] ">
-            <div className="mx-auto flex flex-col items-center justify-center">
+            <div className="mx-auto flex flex-col items-start justify-center">
               <div className="w-full flex md:justify-start justify-center md:items-start items-center">
                 <HeadingIcon
-                  text={headingIconText.chooseTheRight__IconTxt}
-                  classes={{ textWhite: "text-white" }}
+                  text={headingIconText.chooseUs__IconTxt}
+                  classes={{ textBlack: "text-black" }}
                 />
               </div>
 
               <div>
-                <p className="text-white  text-[28px] lg:text-4xl font-medium text-center md:text-left">
-                  Choose the Right General Contractors{" "}
-                  <span className="text-primary">in Toronto</span>
-                </p>
+                <h3 className="text-black  text-[28px] lg:text-4xl font-medium text-center md:text-left">
+                Why <br />
+                  <span className="text-primary">Chooses Us</span>
+                </h3>
               </div>
 
               <div>
-                <p className=" md:block text-lg font-normal text-center md:text-left text-white pt-4">
-                  Choosing the right general contractor in Toronto, or anywhere,
-                  is crucial for the success of your construction project. Every
-                  renovation company is not the same or not good at work. You
-                  have to choose the right one
+                <p className=" md:block text-lg font-normal text-center md:text-left text-black pt-4">
+                In conclusion, based on our stellar reputation, unparalleled expertise, and unwavering dedication to customer satisfaction, Kirgil Stucco Design is undoubtedly the best choice for all your stucco needs
                 </p>
               </div>
             </div>
 
-            <div className=" border-2 my-6 md:my-0 shadow bg-[#FFF9EE] rounded-lg">
+            <div className=" border-2 my-6 md:my-0 bg__color1">
               <h2 className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-[22px] font-bold">
                 Usual General Contractors
               </h2>
@@ -115,7 +112,7 @@ const ChoosetheRight = () => {
                 ))}
               </div>
             </div>
-            <div className=" border-2 my-6 md:my-0 shadow bg-[#FFF9EE] rounded-lg">
+            <div className=" border-2 my-6 md:my-0 bg__color2">
               <h2 className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-[22px] font-bold">
                 Our General Contractors
               </h2>
@@ -146,4 +143,4 @@ const ChoosetheRight = () => {
   );
 };
 
-export default ChoosetheRight;
+export default ChoosesUs;
