@@ -18,7 +18,6 @@ import AboutUs from "./AboutUs/AboutUs";
 import WorkingProcess from "./WorkingProcess/WorkingProcess";
 import ReadyToWork from "./ReadyToWork/ReadyToWork";
 import CostBudgeting from "./CostBudgeting/CostBudgeting";
-import FactorsToHiringUs from "./FactorsToHiringUs/FactorsToHiringUs";
 
 const MainHomePageComponent = () => {
   return (
@@ -85,7 +84,7 @@ const MainHomePageComponent = () => {
       </section>
 
       <section>
-        <FactorsToHiringUs/>
+      
       </section>
 
       <section>
