@@ -31,13 +31,15 @@ const MainHomePageComponent = () => {
         <PartnerNRatings />
       </section>
 
+      <section>
+        <AboutUs/>
+      </section>
+
       {/* <section>
         <BestServices/>
       </section>
 
-      <section>
-        <AboutUs/>
-      </section>
+      
 
       <section>
         <KeyServices/>

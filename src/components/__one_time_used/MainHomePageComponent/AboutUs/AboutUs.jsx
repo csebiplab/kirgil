@@ -1,66 +1,40 @@
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
-import React from "react";
+import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div className="bg-[#FFF9EE]">
-        <div className="container">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-[50px] py-[60px] lg:py-[70px] xl:py-[80px] 2xl:py-[90px] 3xl:py-[100px] 4xl:py-[110px] 5xl:py-[120px]">
-        <div className="order-2 md:order-1">
-          <div className="">
-            <div className="flex md:justify-normal justify-center md:items-start items-center">
-              <HeadingIcon
-                text={headingIconText.AboutUs__IconTxt}
-              />
-            </div>
-            <h3 className="mt-4 lg:mb-[25px] mb-[15px] text-[28px] md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center font-medium">
-              <span className="text-primary">About Our </span>
-              General Contractors in Toronto
-            </h3>
-            <p className="text-lg font-medium leading-[194%] text-center md:text-left">
-            National Remodelling & General Contracting Inc. is one of the best remodeling & contracting companies in Toronto. We’ve been in business for the past 15 years serving the GTA and surrounding areas in both residential and commercial capacity. Our company is fully licensed and insured, with licensed plumbers, electricians, HVAC and gas, and mechanical guys on board our team. We can do legal basements, kitchen renovations, washrooms, stairs, hardwood floors, tiling, painting, fences and decks, carpentry, and many more designs to your dreams. We have a Whmis license, height, and fall, asbestos, and I’m fully insured. Please give us a call today at 416-996-2409. We look forward to hearing from you!
-            </p>
-          </div>
-        </div>
-        <div className="order-1 md:order-2">
-          <div className="grid grid-cols-7 gap-x-4">
-            <div className="col-span-4">
-              <div>
-                <div className="mb-6 w-full h-[197px] flex justify-center">
-                  <Image
-                    src="/assets/images/About_Us_1.png"
-                    alt="About us"
-                    width={350}
-                    height={262}
-                    className="h-auto w-full"
-                  />
-                </div>
-                <div>
-                  <Image
-                    src="/assets/images/About_Us_3.png"
-                    alt="About us"
-                    width={350}
-                    height={333}
-                    className="h-auto w-full"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="col-span-3">
+    <div className=" bg-white">
+      <div className=" container">
+        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px] 2xl:py-[100px] lg:py-[70px] py-[50px]">
+          <div className=" md:col-span-3 flex justify-center items-center ">
+            <div className="">
               <Image
-                src="/assets/images/About_Us_2.png"
-                alt="About us"
-                width={295}
-                height={515}
-                className="h-full w-full"
+                src="/assets/images/About_Us.png"
+                width={596}
+                height={490}
+                alt="about us image"
+                className=""
               />
             </div>
+          </div>
+
+          <div className="md:col-span-4 ">
+            <div className="flex md:justify-normal justify-center md:items-start items-center">
+              <HeadingIcon text={headingIconText.AboutUs__IconTxt} />
+            </div>
+            <p className="mt-4 lg:mb-[25px] mb-[15px] text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center">
+            About Our Expert <br /> <span className="text-[#FB9401]">Stucco Contractor Toronto</span>
+
+            </p>
+            <p className=" 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
+            Our expert team specializes in high-quality stucco installation and repair services, catering to residential and commercial properties. With years of experience and a reputation for excellence, we are committed to delivering durable, aesthetically pleasing finishes that enhance the value and appearance of your building. Whether you need traditional stucco, EIFS (Exterior Insulation and Finish System), or decorative stucco moldings, we use premium materials and cutting-edge techniques to ensure long-lasting results. Our skilled craftsmen pay meticulous attention to detail, ensuring each project is completed on time and within budget.
+              </p>
+            
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };
