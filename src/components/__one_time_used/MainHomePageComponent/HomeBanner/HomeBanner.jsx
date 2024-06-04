@@ -11,9 +11,9 @@ const HomeBanner = () => {
           <div className="banner-content grid grid-cols-1 md:grid-cols-8 items-center gap-10 py-[40px] md:pt-[60px] lg:pt-[85px] xl:pt-[115px] 2xl:pt-[130px] 3xl:pt-[150px] 4xl:pt-[170px] 5xl:pt-[192px] md:pb-[60px] lg:pb-[80px] xl:pb-[105px] 2xl:pb-[130px] 3xl:pb-[155px] 4xl:pb-[180px] 5xl:pb-[205px]">
             <div className="md:col-span-4 flex items-center">
               <div className="">
-                <p className="text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px] 3xl:text-[52px] 4xl:text-[56px] 5xl:text-[60px] text-primary font-medium text-center md:text-left leading-tight">
+                <h1 className="text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px] 3xl:text-[52px] 4xl:text-[56px] 5xl:text-[60px] text-primary font-medium text-center md:text-left leading-tight">
                   General Contractors <br /> in Toronto Ontario
-                </p>
+                </h1>
                 <p className="text-lg lg:text-[20px] font-medium text-center md:text-left leading-[30px] lg:leading-[40px]">
                   The general contractors in Toronto of National Remodelling &
                   General Contracting Inc. offer top-notch #1 remodeling and
