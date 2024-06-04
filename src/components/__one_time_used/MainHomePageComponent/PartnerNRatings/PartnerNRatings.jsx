@@ -36,7 +36,7 @@ const PartnerNRatings = () => {
         <div className="w-full mx-auto lg:px-0 px-[15px] md:px-[30px] mt-4 md:mt-0 lg:-mt-20 bg-[#FFF9EE] lg:rounded-xl  ">
 
 
-          {/* <div className="px-4 py-4  mx-auto border-2 ">
+          <div className="px-4 py-4  mx-auto border-2 ">
             <div className="grid lg:grid-cols-9 grid-cols-1 lg:justify-between justify-center items-center w-full gap-x-[15px] p-2 ">
 
               <div className=" lg:col-span-1 flex items-center justify-center text-center mx-auto py-5  ">
@@ -125,7 +125,7 @@ const PartnerNRatings = () => {
               </div>
 
             </div>
-          </div> */}
+          </div>
 
           {/* partner company card */}
           <div className="grid lg:grid-cols-6 grid-cols-3  items-center justify-center gap-2 mt-[25px]">
