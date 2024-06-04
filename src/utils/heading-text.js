@@ -11,6 +11,7 @@ export const headingIconText = {
     // reviews__IconTxt: "Reviews",
     // gallery__IconTxt: "Our Portfolio Gallery",
     chooseUs__IconTxt: "Chooses Us",
+    faq__IconTxt: "FAQ",
     aboutUs__IconTxt: "About Us",
     exteriorContractors__IconTxt: "Exterior Contractors",
     workWithUs__IconTxt: "Work With us",

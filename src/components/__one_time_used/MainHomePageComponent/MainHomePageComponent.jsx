@@ -20,6 +20,7 @@ import WorkWithUs from "./WorkWithUs/WorkWithUs";
 import CostBudgeting from "./CostBudgeting/CostBudgeting";
 import ExteriorContractors from "./ExteriorContractors/ExteriorContractors";
 import ReadyToWork from "./ReadyToWork/ReadyToWork";
+import FaqSection from "./FaqSection/FaqSection";
 
 const MainHomePageComponent = () => {
   return (
@@ -47,6 +48,10 @@ const MainHomePageComponent = () => {
 
       <section>
         <ChoosesUs/>
+      </section>
+
+      <section>
+        <FaqSection/>
       </section>
 
       <section>
