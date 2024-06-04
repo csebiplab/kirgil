@@ -16,8 +16,9 @@ import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import ChoosetheRight from "./ChoosetheRight/ChoosetheRight";
 import AboutUs from "./AboutUs/AboutUs";
 import WorkingProcess from "./WorkingProcess/WorkingProcess";
-import ReadyToWork from "./ReadyToWork/ReadyToWork";
+import WorkWithUs from "./WorkWithUs/WorkWithUs";
 import CostBudgeting from "./CostBudgeting/CostBudgeting";
+import ExteriorContractors from "./ExteriorContractors/ExteriorContractors";
 
 const MainHomePageComponent = () => {
   return (
@@ -33,6 +34,13 @@ const MainHomePageComponent = () => {
 
       <section>
         <AboutUs/>
+      </section>
+
+      <section>
+        <ExteriorContractors/>
+      </section>
+      <section>
+        <WorkWithUs/>
       </section>
 
       {/* <section>
@@ -70,7 +78,7 @@ const MainHomePageComponent = () => {
       </section>
 
       <section>
-        <ReadyToWork/>
+        <WorkWithUs/>
       </section>
 
       <section>
@@ -83,10 +91,6 @@ const MainHomePageComponent = () => {
 
       <section>
         <Review/>
-      </section>
-
-      <section>
-      
       </section>
 
       <section>

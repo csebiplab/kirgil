@@ -13,7 +13,7 @@ const HomeBanner = () => {
             <div className="md:col-span-4 flex items-center">
               <div className="">
                 <h1 className="text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px] 3xl:text-[52px] 4xl:text-[56px] 5xl:text-[65px] text-black font-bold text-center md:text-left leading-tight">
-                  #1 Stucco Contractor{" "}
+                  #1 Stucco Contractor <br />
                   <span className="text-[#FB9401]">in Toronto</span>
                 </h1>
                 <p className="text-lg lg:text-[20px] font-medium text-center md:text-left leading-[30px] lg:leading-[40px] pt-2">
@@ -56,7 +56,7 @@ const HomeBanner = () => {
         <div className="small__banner__section w-auto h-[627px]">
           <div className="small__banner__section__content">
             <h1 className="pt-[30px] pl-[30px] text-4xl text-black font-bold">
-              #1 Stucco Contractor 
+              #1 Stucco Contractor <br />
               <span className="text-[#FB9401]"> in Toronto</span>
             </h1>
             <p className="px-[40px] pt-[10px] text-lg text-black font-medium">
