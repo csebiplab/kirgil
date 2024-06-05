@@ -1,9 +1,9 @@
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
-import "./AboutUs.css";
+import "./Professional.css";
 
-const AboutUs = () => {
+const Professional = () => {
   return (
     <div>
       <div className=" container">
@@ -11,10 +11,10 @@ const AboutUs = () => {
           <div className=" md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/images/About_Us.png"
+                src="/assets/images/Professional.png"
                 width={680}
                 height={495}
-                alt="about us image"
+                alt="Professional image"
                 className=""
               />
             </div>
@@ -22,7 +22,7 @@ const AboutUs = () => {
 
           <div className="md:col-span-3 ">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
-              <HeadingIcon text={headingIconText.aboutUs__IconTxt} />
+              <HeadingIcon text={headingIconText.professional__IconTxt} />
             </div>
             <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] font-bold text-dark md:text-start text-center">
             About Our Expert <br /> <span className="text-[#FB9401]">Stucco Contractor Toronto</span>
@@ -39,4 +39,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Professional;

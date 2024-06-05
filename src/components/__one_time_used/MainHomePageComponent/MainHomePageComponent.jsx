@@ -24,6 +24,9 @@ import FaqSection from "./FaqSection/FaqSection";
 import InstallationCompany from "./InstallationCompany/InstallationCompany";
 import RepairCompany from "./RepairCompany/RepairCompany";
 import ProjectDesigns from "./ProjectDesigns/ProjectDesigns";
+import Experienced from "./Experienced/Experienced";
+import Professional from "./Professional/Professional";
+import BestStuccoPainting from "./BestStuccoPainting/BestStuccoPainting";
 
 const MainHomePageComponent = () => {
   return (
@@ -46,11 +49,7 @@ const MainHomePageComponent = () => {
       </section>
 
       <section>
-        <RepairCompany/>
-      </section>
-
-      <section>
-        <ProjectDesigns/>
+        <Experienced/>
       </section>
 
       <section>
@@ -58,11 +57,27 @@ const MainHomePageComponent = () => {
       </section>
 
       <section>
-        <WorkWithUs/>
+        <Professional/>
+      </section>
+
+      <section>
+        <RepairCompany/>
+      </section>
+
+      <section>
+        <BestStuccoPainting/>
+      </section>
+
+      <section>
+        <ProjectDesigns/>
       </section>
 
       <section>
         <ChoosesUs/>
+      </section>
+
+      <section>
+        <WorkWithUs/>
       </section>
 
       <section>

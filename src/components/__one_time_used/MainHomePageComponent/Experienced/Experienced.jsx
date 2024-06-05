@@ -1,9 +1,9 @@
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
-import "./AboutUs.css";
+import "./Experienced.css";
 
-const AboutUs = () => {
+const Experienced = () => {
   return (
     <div>
       <div className=" container">
@@ -11,10 +11,10 @@ const AboutUs = () => {
           <div className=" md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/images/About_Us.png"
+                src="/assets/images/Experienced.png"
                 width={680}
                 height={495}
-                alt="about us image"
+                alt="Experienced image"
                 className=""
               />
             </div>
@@ -22,14 +22,14 @@ const AboutUs = () => {
 
           <div className="md:col-span-3 ">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
-              <HeadingIcon text={headingIconText.aboutUs__IconTxt} />
+              <HeadingIcon text={headingIconText.experienced__IconTxt} />
             </div>
             <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] font-bold text-dark md:text-start text-center">
-            About Our Expert <br /> <span className="text-[#FB9401]">Stucco Contractor Toronto</span>
+            Toronto's Experienced  <br /> <span className="text-[#FB9401]">Stucco Contractor</span>
 
             </h3>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">
-            Our expert team specializes in high-quality stucco installation and repair services, catering to residential and commercial properties. With years of experience and a reputation for excellence, we are committed to delivering durable, aesthetically pleasing finishes that enhance the value and appearance of your building. Whether you need traditional stucco, EIFS (Exterior Insulation and Finish System), or decorative stucco moldings, we use premium materials and cutting-edge techniques to ensure long-lasting results. Our skilled craftsmen pay meticulous attention to detail, ensuring each project is completed on time and within budget.
+            With years of proven expertise in the industry, we specialize in enhancing the aesthetic appeal and durability of homes and businesses across the Greater Toronto Area. From traditional to modern styles, our skilled artisans deliver flawless stucco application, repair, and restoration services tailored to your unique vision and needs. We prioritize quality craftsmanship, using premium materials and techniques to ensure long-lasting results that stand the test of time and weather. Whether you're renovating, building anew, or simply seeking to refresh your exterior, trust our reliable and dedicated professionals to bring your stucco dreams to life.
               </p>
             
           </div>
@@ -39,4 +39,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Experienced;
