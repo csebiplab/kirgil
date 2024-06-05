@@ -21,6 +21,8 @@ import CostBudgeting from "./CostBudgeting/CostBudgeting";
 import ExteriorContractors from "./ExteriorContractors/ExteriorContractors";
 import ReadyToWork from "./ReadyToWork/ReadyToWork";
 import FaqSection from "./FaqSection/FaqSection";
+import InstallationCompany from "./InstallationCompany/InstallationCompany";
+import RepairCompany from "./RepairCompany/RepairCompany";
 
 const MainHomePageComponent = () => {
   return (
@@ -36,6 +38,14 @@ const MainHomePageComponent = () => {
 
       <section>
         <AboutUs/>
+      </section>
+
+      <section>
+        <InstallationCompany/>
+      </section>
+
+      <section>
+        <RepairCompany/>
       </section>
 
       <section>

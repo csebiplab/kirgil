@@ -13,6 +13,8 @@ export const headingIconText = {
     chooseUs__IconTxt: "Chooses Us",
     faq__IconTxt: "FAQ",
     aboutUs__IconTxt: "About Us",
+    installationCompany__IconTxt: "Installation Company",
+    repairCompany__IconTxt: "Repair Company",
     exteriorContractors__IconTxt: "Exterior Contractors",
     workWithUs__IconTxt: "Work With us",
     // WorkingProcess__IconTxt: "Working Process",
