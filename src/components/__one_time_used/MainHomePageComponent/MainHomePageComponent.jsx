@@ -88,6 +88,10 @@ const MainHomePageComponent = () => {
         <ReadyToWork/>
       </section>
 
+      <section>
+        <GiveUsFeedback/>
+      </section>
+
       {/* <section>
         <BestServices/>
       </section>
@@ -148,9 +152,7 @@ const MainHomePageComponent = () => {
         <OurServiceAreas/>
       </section>
 
-      <section>
-        <GiveUsFeedback/>
-      </section> */}
+       */}
       
     </div>
   );
