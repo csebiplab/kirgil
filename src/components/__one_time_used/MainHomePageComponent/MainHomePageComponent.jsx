@@ -23,6 +23,7 @@ import ReadyToWork from "./ReadyToWork/ReadyToWork";
 import FaqSection from "./FaqSection/FaqSection";
 import InstallationCompany from "./InstallationCompany/InstallationCompany";
 import RepairCompany from "./RepairCompany/RepairCompany";
+import ProjectDesigns from "./ProjectDesigns/ProjectDesigns";
 
 const MainHomePageComponent = () => {
   return (
@@ -46,6 +47,10 @@ const MainHomePageComponent = () => {
 
       <section>
         <RepairCompany/>
+      </section>
+
+      <section>
+        <ProjectDesigns/>
       </section>
 
       <section>

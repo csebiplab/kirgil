@@ -12,7 +12,7 @@ const RepairCompany = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.repairCompany__IconTxt} />
             </div>
-            <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] font-bold text-primary md:text-start text-center">
+            <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-bold text-primary md:text-start text-center">
             Toronto's Stucco Repair <br /> <span className="text-black"> Company</span>
 
             </h3>
