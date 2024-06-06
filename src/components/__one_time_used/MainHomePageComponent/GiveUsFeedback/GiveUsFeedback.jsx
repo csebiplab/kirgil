@@ -12,7 +12,6 @@ export default function ContactHome() {
       <div className="custom-container">
         <div className="grid grid-cols-1 lg:grid-cols-6 items-center common__padding__top">
           <div className="contact__us order-2 lg:order-1 py-[30px] lg:py-[50px] xl:py-[80px] 3xl:py-[100px] 5xl:py-[130px] px-6 pl-[30px] md:pl-[60] lg:pl-[90px]  xl:pl-[120px]  2xl:pl-[160px] 3xl:pl-[200px]  4xl:pl-[240px] 5xl:pl-[285px] lg:pr-2 lg:col-span-3 text-white">
-            
             <div className="">
               <h2 className="text-[28px] md:text-4xl font-bold leading-normal text-black pb-[20px] text-center lg:text-left">
                 Contact Us
@@ -24,7 +23,7 @@ export default function ContactHome() {
                 >
                   <PiMapPinLineFill className="fill-black w-[29px] h-[29px]" />
                   <span className="text-black text-lg font-normal">
-                  1003 Caledonia Road Toronto, ON M6B 3Y9
+                    1003 Caledonia Road Toronto, ON M6B 3Y9
                   </span>
                 </a>
               </div>
@@ -35,7 +34,7 @@ export default function ContactHome() {
                 >
                   <FaPhoneVolume className="fill-black w-[29px] h-[29px]" />
                   <span className="text-black text-lg font-normal">
-                  (416) 994-4597
+                    (416) 994-4597
                   </span>
                 </a>
               </div>
@@ -46,7 +45,7 @@ export default function ContactHome() {
                 >
                   <IoIosMail className="fill-black w-[29px] h-[29px]" />
                   <span className="text-black text-lg font-normal">
-                  serhatkirgil@gmail.com
+                    serhatkirgil@gmail.com
                   </span>
                 </a>
               </div>
@@ -60,7 +59,7 @@ export default function ContactHome() {
               <div className="flex justify-center lg:justify-start">
                 <div>
                   <h4 className="text-black text-[25px] text-center md:text-left font-bold">
-                  Best Construction Company Toronto
+                    Best Construction Company Toronto
                   </h4>
                   <div className="py-8">
                     <Image
@@ -72,7 +71,7 @@ export default function ContactHome() {
                     />
                   </div>
                   <h4 className="text-black text-[25px] font-bold text-center md:text-left">
-                  KIRGIL CONSTRACTION INC
+                    KIRGIL CONSTRACTION INC
                   </h4>
                 </div>
               </div>

@@ -73,6 +73,18 @@ const MainHomePageComponent = () => {
       </section>
 
       <section>
+        <ProjectGallery/>
+      </section>
+
+      <section>
+        <WorkingProcess/>
+      </section>
+
+      <section>
+        <Review/>
+      </section>
+
+      <section>
         <ChoosesUs/>
       </section>
 
@@ -110,17 +122,12 @@ const MainHomePageComponent = () => {
         <OurExperience/>
       </section>
 
-      <section>
-        <ProjectGallery/>
-      </section>
 
       <section>
         <GeneralContractors/>
       </section>
 
-      <section>
-        <WorkingProcess/>
-      </section>
+      
 
       <section>
         <Quality/>
@@ -138,9 +145,7 @@ const MainHomePageComponent = () => {
         <TrustUs/>
       </section>
 
-      <section>
-        <Review/>
-      </section>
+     
 
       
 

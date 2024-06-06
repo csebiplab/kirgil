@@ -1,23 +1,25 @@
+
 "use client";
-import working1 from "../../../../../public/assets/images/working1.png";
-import working2 from "../../../../../public/assets/images/working2.png";
-import working3 from "../../../../../public/assets/images/working3.png";
-import working4 from "../../../../../public/assets/images/working4.png";
-import working5 from "../../../../../public/assets/images/working5.png";
-import working6 from "../../../../../public/assets/images/working6.png";
+
+import work1 from "../../../../../public/assets/images/working1.png";
+import work2 from "../../../../../public/assets/images/working2.png";
+import work3 from "../../../../../public/assets/images/working3.png";
+// import work4 from "../../../../../public/assets/images/working4.png";
+// import work5 from "../../../../../public/assets/images/working5.png";
+// import work6 from "../../../../../public/assets/images/working6.png";
 import Image from "next/image";
+
+import "./WorkingProcess.css";
 
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
-import "swiper/css/navigation";
 import "swiper/css/virtual";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import "./WorkingProcess.css";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
+import { SwipButton } from "../BenefitsWithEasyPools/SwipButton";
 
 const breakpoints = {
   0: {
@@ -31,159 +33,97 @@ const breakpoints = {
   },
 };
 
-const workingData = [
+const slideData = [
   {
-    imgSrc: working1,
-    title: "Initial Consultation",
-    description: `We start by understanding the client's requirements, budget, and timeline during an initial consultation. This helps us grasp the project scope and objectives effectively.`,
+    imgSrc: work1,
+    title: "Clear Communication",
+    description: `Establish clear channels of communication to ensure all parties are on the same page. Utilize communication platforms such as Slack or Microsoft Teams for quick updates and discussions.`,
   },
   {
-    imgSrc: working2,
+    imgSrc: work2,
     title: "Project Planning",
-    description: `After the consultation, our team conducts a thorough site assessment to evaluate the feasibility of the project. We collaborate with architects, engineers, and designers.`,
+    description: `Break down projects into smaller tasks and create a detailed project plan outlining objectives, timelines, and resources required. Use project management tools like Asana or Trello to track.`,
   },
   {
-    imgSrc: working3,
-    title: "Detailed Proposal",
-    description: `Once the project plan is finalized, we provide the client with a detailed proposal outlining the scope of work, timeline, materials, and cost estimates. `,
+    imgSrc: work3,
+    title: "Standardized Procedures",
+    description: `Develop standardized procedures for common tasks to ensure consistency and quality across projects. Document these procedures in a centralized location accessible to all contractors.`,
   },
   {
-    imgSrc: working4,
-    title: "Permit Acquisition",
-    description: `We handle all the necessary permits and approvals required for the project, ensuring compliance with local building codes and regulations.`,
+    imgSrc: work1,
+    title: "Clear Communication",
+    description: `Establish clear channels of communication to ensure all parties are on the same page. Utilize communication platforms such as Slack or Microsoft Teams for quick updates and discussions.`,
   },
   {
-    imgSrc: working5,
-    title: "Execution",
-    description: `With the plan in place and permits acquired, our experienced team of contractors begins the construction process. We prioritize efficiency, quality and safety throughout every stage of the project.`,
+    imgSrc: work2,
+    title: "Project Planning",
+    description: `Break down projects into smaller tasks and create a detailed project plan outlining objectives, timelines, and resources required. Use project management tools like Asana or Trello to track.`,
   },
   {
-    imgSrc: working6,
-    title: "Regular Updates",
-    description: `We maintain open communication with the client, providing regular updates on the progress of the project and addressing any concerns or modifications promptly.`,
-  },
+    imgSrc: work3,
+    title: "Standardized Procedures",
+    description: `Develop standardized procedures for common tasks to ensure consistency and quality across projects. Document these procedures in a centralized location accessible to all contractors.`,
+  }
+  
 ];
 
-const WorkingProcess = () => {
+const OurWorkingProcessSection = () => {
   return (
-    <div className="bg-[#FFF9EE]">
-      <div className="container">
-        <div className="common__padding__top">
-          <div className="text-center">
-            <div className="flex justify-center items-center">
-              <HeadingIcon text={headingIconText.workingProcess__IconTxt} />
-            </div>
-
-            <h2 className="mt-4 lg:mb-[25px] mb-[15px] text-[28px] md:text-3xl lg:text-4xl text-dark leading-normal text-center font-medium">
-              <span className="text-primary">Working Process</span> of Our
-              Toronto General Contractors
-            </h2>
+    <div className="container">
+      <div className="lg:py-[44px] py-8">
+        <div className="text-center ">
+          <div className="flex justify-center gap-[54px]">
+            <HeadingIcon text={headingIconText.workingProcess__IconTxt}/>
           </div>
-
-          <Swiper
-            modules={[Autoplay, Navigation]}
-            loop={true}
-            autoplay={{
-              delay: 3000,
-              pauseOnMouseEnter: false,
-              disableOnInteraction: false,
-              stopOnLastSlide: false,
-            }}
-            speed={3000}
-            allowTouchMove={false}
-            breakpoints={breakpoints}
-          >
-            {workingData.map((slide, index) => (
-              <SwiperSlide
-                key={index}
-                className={`!relative text-center py-4 lg:pt-10 px-20 md:px-14 lg:px-6`}
-              >
-                <div className="">
-                  <Image
-                    src={slide.imgSrc}
-                    width={192}
-                    height={192}
-                    alt="working"
-                    className="working p-10 mt-[10px] mx-auto"
-                  />
-                  
-                  <div className="text-center">
-                    <h4 className="text-[25px] font-medium py-2">{slide.title}</h4>
-                    <p className="text-lg pt-2 font-normal text-black leading-[20px] md:leading-6">
-                      {slide.description}
-                    </p>
-                  </div>
-                </div>
-                <div className="hidden md:block absolute md:top-28 lg:top-36 -left-[45px] right-[420px]">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="84"
-                    height="23"
-                    viewBox="0 0 84 23"
-                    fill="none"
-                  >
-                    <ellipse
-                      cx="11.5846"
-                      cy="11.7705"
-                      rx="11.0163"
-                      ry="11"
-                      fill="#C99B4C"
-                    />
-                    <ellipse
-                      cx="42.6306"
-                      cy="11.7705"
-                      rx="11.0163"
-                      ry="11"
-                      fill="black"
-                    />
-                    <ellipse
-                      cx="72.6751"
-                      cy="11.7705"
-                      rx="11.0163"
-                      ry="11"
-                      fill="#C99B4C"
-                    />
-                  </svg>
-                </div>
-                <div className="block md:hidden flex justify-center pt-4">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="84"
-                    height="23"
-                    viewBox="0 0 84 23"
-                    fill="none"
-                  >
-                    <ellipse
-                      cx="11.5846"
-                      cy="11.7705"
-                      rx="11.0163"
-                      ry="11"
-                      fill="#C99B4C"
-                    />
-                    <ellipse
-                      cx="42.6306"
-                      cy="11.7705"
-                      rx="11.0163"
-                      ry="11"
-                      fill="black"
-                    />
-                    <ellipse
-                      cx="72.6751"
-                      cy="11.7705"
-                      rx="11.0163"
-                      ry="11"
-                      fill="#C99B4C"
-                    />
-                  </svg>
-                </div>
-                
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <h2 className="text-[28px] md:text-[32px] font-bold text-primary mt-[15px]  md:pb-0 pb-[6px]">
+          Streamlined Working Process <span className="text-black">of Our Contractors</span>
+          </h2>
+          <p className="lg:mt-[15px] mt-2 mb-4 lg:mb-[35px] text-base font-normal">
+          Streamlining the working process of our contractors is crucial for enhancing efficiency and productivity. By implementing systematic procedures and utilizing technology effectively, we can optimize every stage of the workflow.
+          </p>
         </div>
+
+        {/* ==================== swiper slider ================ */}
+        <Swiper
+          modules={[Autoplay]}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            pauseOnMouseEnter: false,
+            disableOnInteraction: false,
+            stopOnLastSlide: false,
+          }}
+          speed={3000}
+          allowTouchMove={false}
+          breakpoints={breakpoints}
+          spaceBetween={12}
+        >
+          {slideData.map((slideInfo, index) => (
+            <SwiperSlide key={index} className={`px-[30px] md:px-0`}>
+              <div className="w-full card-sd bg-primary h-auto pt-4">
+                <Image
+                  src={slideInfo?.imgSrc}
+                  width={72}
+                  height={72}
+                  alt="sliderImage"
+                  className="w-[100px] h-[100px] p-3 rounded-full border-2 bg-white mx-auto"
+                />
+                <div className="text-center py-3 md:px-2 px-1">
+                  <h4 className="text-[25px] font-bold py-1 md:py-2 text-center text-balck">
+                    {slideInfo?.title}
+                  </h4>
+                  <p className="text-base font-medium md:px-1 text-center text-black">
+                    {slideInfo?.description}
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+          <SwipButton/>
+        </Swiper>
       </div>
     </div>
   );
 };
 
-export default WorkingProcess;
+export default OurWorkingProcessSection;
