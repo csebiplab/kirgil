@@ -4,9 +4,10 @@
 import work1 from "../../../../../public/assets/images/working1.png";
 import work2 from "../../../../../public/assets/images/working2.png";
 import work3 from "../../../../../public/assets/images/working3.png";
-// import work4 from "../../../../../public/assets/images/working4.png";
-// import work5 from "../../../../../public/assets/images/working5.png";
-// import work6 from "../../../../../public/assets/images/working6.png";
+import work4 from "../../../../../public/assets/images/working4.png";
+import work5 from "../../../../../public/assets/images/working5.png";
+import work6 from "../../../../../public/assets/images/working6.png";
+import work7 from "../../../../../public/assets/images/working7.png";
 import Image from "next/image";
 
 import "./WorkingProcess.css";
@@ -50,19 +51,24 @@ const slideData = [
     description: `Develop standardized procedures for common tasks to ensure consistency and quality across projects. Document these procedures in a centralized location accessible to all contractors.`,
   },
   {
-    imgSrc: work1,
-    title: "Clear Communication",
-    description: `Establish clear channels of communication to ensure all parties are on the same page. Utilize communication platforms such as Slack or Microsoft Teams for quick updates and discussions.`,
+    imgSrc: work4,
+    title: "Utilize Technology",
+    description: `Leverage technology to automate repetitive tasks and streamline processes. For example, use scheduling software to coordinate meetings and appointments, and accounting software to manage finances and invoices.`,
   },
   {
-    imgSrc: work2,
-    title: "Project Planning",
-    description: `Break down projects into smaller tasks and create a detailed project plan outlining objectives, timelines, and resources required. Use project management tools like Asana or Trello to track.`,
+    imgSrc: work5,
+    title: "Training & Development",
+    description: `Invest in training and development programs to equip contractors with the skills and knowledge needed to perform their tasks effectively. Provide access to online courses, workshops, and resources relevant.`,
   },
   {
-    imgSrc: work3,
-    title: "Standardized Procedures",
-    description: `Develop standardized procedures for common tasks to ensure consistency and quality across projects. Document these procedures in a centralized location accessible to all contractors.`,
+    imgSrc: work6,
+    title: "Feedback Mechanism",
+    description: `Establish a feedback mechanism to gather input from contractors on the working process and identify areas for improvement. Regularly review feedback and make necessary adjustments to enhance efficiency.`,
+  },
+  {
+    imgSrc: work7,
+    title: "Continuous Improvement",
+    description: `Foster a culture of continuous improvement where contractors are encouraged to suggest innovative ideas and solutions for optimizing the working process. Regularly assess and refine procedures to adapt.`,
   }
   
 ];

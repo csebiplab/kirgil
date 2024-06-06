@@ -114,7 +114,7 @@ const Header = () => {
             </h5>
           </div>
         </div>
-      <div className="w-full bg-white flex justify-between items-center px-[20px] sm:px-[30px] py-2">
+      <div className="w-full bg-white flex justify-between items-center px-[20px] sm:px-[30px] py-2 sm:py-2 lg:py-0">
         
         <div className="block lg:hidden">
           <Button className="small__nav__btn flex items-center gap-x-2">

@@ -26,7 +26,7 @@ const breakpoints = {
     spaceBetween: 30,
   },
   640: {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
   },
   767: {
@@ -66,25 +66,49 @@ const services = [
   {
     title: "Follow the Manufacturer's Instructions",
   },
+  {
+    title: "Monitor Weather Conditions",
+  },
+  {
+    title: "Allow Sufficient Curing Time",
+  },
+  {
+    title: "Communicate with Clients",
+  },
+  {
+    title: "Follow Safety Protocols",
+  },
 ];
 const services2 = [
   {
-    title: "Research multiple contractors",
+    title: "Don't choose solely based on price",
   },
   {
-    title: "Check for licenses and insurance",
+    title: "Don't hire without a contract",
   },
   {
-    title: "Get multiple quotes",
+    title: "Never ignore red flags",
   },
   {
-    title: "Ask for references",
+    title: "Don't make full payment upfront",
   },
   {
-    title: "Have a written contract",
+    title: "Never skip the warranty",
   },
   {
-    title: "Follow the Manufacturer's Instructions",
+    title: "Don't overlook permits",
+  },
+  {
+    title: "Don't rush the decision",
+  },
+  {
+    title: "Never neglect communication",
+  },
+  {
+    title: "Don't ignore maintenance advice",
+  },
+  {
+    title: "Don't hesitate to ask questions",
   },
 ];
 
@@ -109,7 +133,7 @@ const SelectionPreparation = () => {
           </div>
 
           {/* taggle button */}
-          <div className="flex justify-center items-center py-5 mb-12 mx-2 ">
+          <div className="flex justify-center items-center mb-12 mx-2 ">
             <label className="themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-3xl bg-white border border-primary">
               <input
                 type="checkbox"
@@ -153,7 +177,9 @@ const SelectionPreparation = () => {
             </label>
           </div>
 
-          <div className="lg:mt-15 mt-10">
+          <div className="w-full h-[1px] bg-primary"/>
+
+          <div className="pt-[70px]">
             {!isChecked && (
               <Swiper
                 modules={[Navigation, Autoplay]}
@@ -176,7 +202,7 @@ const SelectionPreparation = () => {
                   >
                     <div className="mx-auto w-[210px] h-[185px] cart px-4">
                       <div className="py-7">
-                        <p className="mt-4 py-5 mx-auto text-white text-center text-xs md:text-sm xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
+                        <p className="mt-4 py-5 mx-auto text-white text-center text-lg font-bold">
                           {service.title}{" "}
                         </p>
                       </div>
@@ -210,7 +236,7 @@ const SelectionPreparation = () => {
                   >
                     <div className="mx-auto w-[210px] h-[185px] cart px-4">
                       <div className=" py-7 ">
-                        <p className="mt-4 py-5 mx-auto text-center text-white text-xs md:text-sm xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
+                        <p className="mt-4 py-5 mx-auto text-center text-white text-lg font-bold">
                           {service.title}{" "}
                         </p>
                       </div>

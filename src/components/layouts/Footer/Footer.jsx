@@ -251,7 +251,7 @@ const Footer = () => {
                       href="1003 Caledonia Road Toronto, ON M6B 3Y9"
                       className="footer-link items-start text-left justify-center md:justify-start md:items-center text-sm text-white"
                     >
-                      <PiMapPinLineFill className="w-[21px] h-[21px]" />1003 Caledonia Road Toronto, ON M6B 3Y9
+                      <PiMapPinLineFill className="w-[21px] h-[21px]" />1003 Caledonia Road Toronto, <br /> ON M6B 3Y9
                     </Link>
                   </li>
                   <li className="lg:py-8 xs:py-[12px]">
