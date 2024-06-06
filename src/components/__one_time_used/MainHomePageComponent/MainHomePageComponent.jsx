@@ -27,6 +27,7 @@ import ProjectDesigns from "./ProjectDesigns/ProjectDesigns";
 import Experienced from "./Experienced/Experienced";
 import Professional from "./Professional/Professional";
 import BestStuccoPainting from "./BestStuccoPainting/BestStuccoPainting";
+import SelectionPreparation from "./SelectionPreparation/SelectionPreparation";
 
 const MainHomePageComponent = () => {
   return (
@@ -66,6 +67,10 @@ const MainHomePageComponent = () => {
 
       <section>
         <BestStuccoPainting/>
+      </section>
+
+      <section>
+        <SelectionPreparation/>
       </section>
 
       <section>

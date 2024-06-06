@@ -23,6 +23,7 @@ export const headingIconText = {
     workWithUs__IconTxt: "Work With us",
     workingProcess__IconTxt: "Process",
     readyToWork__IconTxt: "Ready to Work with us",
+    selectionPreparation__IconTxt: "Do's and Don'ts",
     // costBudgeting__IconTxt: "Cost & Budgeting",
     // factorsToHiringUs__IconTxt: "Factors to Hiring Us",
     
