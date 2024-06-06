@@ -1,80 +1,45 @@
 import Image from "next/image";
 
+
 const UpperNavbar = () => {
   return (
     <nav className=" hidden lg:block ">
-      <div className="flex justify-between xl:gap-5 2xl:gap-6 3xl:gap-x-7 4xl:gap-x-8 5xl:gap-x-[35px]">
-        <div className="w-full flex items-center gap-x-4 xl:gap-x-5 2xl:gap-x-6 3xl:gap-x-7 4xl:gap-x-8 5xl:gap-x-9">
-          <div className="flex items-center gap-x-1">
-            <Image
-              src="/assets/images/message.png"
-              width={23}
-              height={23}
-              alt="message icon"
-              className="w-[15px] 2xl:w-[17px] 3xl:w-[19px] 4xl:w-[21px] 5xl:w-[23px] h-auto 5xl:h-[23px]"
-            />
-            <h5 className="text-[11px] 3xl:text-[12px] 4xl:text-[13px] 5xl:text-[14px] text-black">
-              Best Construction Services Company
-            </h5>
-          </div>
-
-          <div className="flex items-center gap-x-1">
-            <Image
-              src="/assets/images/email.png"
-              width={23}
-              height={23}
-              alt="email icon"
-              className="w-[15px] 2xl:w-[17px] 3xl:w-[19px] 4xl:w-[21px] 5xl:w-[23px] h-auto 5xl:h-[23px]"
-            />
-            <h5 className="text-[11px] 3xl:text-[12px] 4xl:text-[13px] 5xl:text-[14px] text-black">
-              informational@yahoo.com
-            </h5>
-          </div>
+      <div className="flex justify-between items-center xl:gap-5 2xl:gap-6 3xl:gap-x-7 4xl:gap-x-8 5xl:gap-x-[35px]">
+        <div className="flex items-center gap-2">
+          <Image
+            src="/assets/icons/map__icon.png"
+            width={24}
+            height={24}
+            alt="location"
+            className="w-[24px] h-[24px]"
+          />
+         <div>
+         <p className="text-xs font-medium text-black">Location</p>
+          <a
+            href="location:1003 Caledonia Road Toronto"
+            className="text-black font-bold text-base"
+          >
+            1003 Caledonia Road Toronto
+          </a>
+         </div>
         </div>
 
-        <div className="w-2/5">
-        <div className="flex justify-end items-center gap-1 4xl:gap-1.5 5xl:gap-2">
-          <h3 className="text-[11px] 3xl:text-[12px] 4xl:text-[13px] 5xl:text-[14px] text-black">
-            Follow Us:
-          </h3>
-          <div className="flex items-center gap-x-2 2xl:gap-x-3 3xl:gap-x-4 4xl:gap-x-5 5xl:gap-x-6">
+        <div className="">
+          <div className="flex items-center gap-2 bg__color__btn py-1 px-3">
             <Image
-              src="/assets/socials/facebook.png"
-              width={20}
-              height={20}
-              className="w-[16px] 4xl:w-[18px] 5xl:w-[20px] h-[16px] 4xl:h-[18px] 5xl:h-[20px]"
-              alt="facebook"
+              src="/assets/icons/phone__icon.png"
+              width={28}
+              height={28}
+              alt="phone icon"
+              className="w-[28px] h-[28px]"
             />
-            <Image
-              src="/assets/socials/x.png"
-              width={20}
-              height={20}
-              className="w-[16px] 4xl:w-[18px] 5xl:w-[20px] h-[16px] 4xl:h-[18px] 5xl:h-[20px]"
-              alt="x"
-            />
-            <Image
-              src="/assets/socials/insta.png"
-              width={20}
-              height={20}
-              className="w-[16px] 4xl:w-[18px] 5xl:w-[20px] h-[16px] 4xl:h-[18px] 5xl:h-[20px]"
-              alt="instagram"
-            />
-            <Image
-              src="/assets/socials/in.png"
-              width={20}
-              height={20}
-              className="w-[16px] 4xl:w-[18px] 5xl:w-[20px] h-[16px] 4xl:h-[18px] 5xl:h-[20px]"
-              alt="linkedin"
-            />
-            <Image
-              src="/assets/socials/google.png"
-              width={20}
-              height={20}
-              className="w-[16px] 4xl:w-[18px] 5xl:w-[20px] h-[16px] 4xl:h-[18px] 5xl:h-[20px]"
-              alt="google"
-            />
+            <a
+              href="tel:416 996-2409"
+              className="text-white font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
+            >
+              416 996-2409
+            </a>
           </div>
-        </div>
         </div>
       </div>
     </nav>
