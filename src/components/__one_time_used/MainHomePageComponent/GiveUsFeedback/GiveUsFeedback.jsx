@@ -11,7 +11,7 @@ export default function ContactHome() {
     <div className="bg__color">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-6 items-center common__padding__top">
-          <div className="contact__us order-2 lg:order-1 py-[30px] lg:py-[50px] xl:py-[80px] 3xl:py-[100px] 5xl:py-[130px] px-6 pl-[30px] md:pl-[60] lg:pl-[90px]  xl:pl-[120px]  2xl:pl-[160px] 3xl:pl-[200px]  4xl:pl-[240px] 5xl:pl-[285px] lg:pr-2 lg:col-span-3 text-white">
+          <div className="contact__us order-2 lg:order-1 py-[30px] lg:py-[50px] xl:py-[80px] 3xl:py-[100px] 5xl:py-[130px] md:pl-[60px] lg:pr-2 lg:col-span-3 text-white">
             <div className="">
               <h2 className="text-[28px] md:text-4xl font-bold leading-normal text-black pb-[20px] text-center lg:text-left">
                 Contact Us
@@ -40,12 +40,12 @@ export default function ContactHome() {
               </div>
               <div className="">
                 <a
-                  href="mailto: serhatkirgil@gmail.com"
+                  href="mailto:Info@kirgil.ca"
                   className="lg:text-lg text-sm flex gap-2 items-center justify-center lg:justify-start pb-6"
                 >
                   <IoIosMail className="fill-black w-[29px] h-[29px]" />
                   <span className="text-black text-lg font-normal">
-                    serhatkirgil@gmail.com
+                  Info@kirgil.ca
                   </span>
                 </a>
               </div>
@@ -78,7 +78,7 @@ export default function ContactHome() {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2 rounded-lg py-[30px] lg:py-[45px]  xl:py-[60px]  3xl:py-[75px] 5xl:py-[85px] px-6 pr-[30px] md:pr-[60] lg:pr-[90px]  xl:pr-[120px]  2xl:pr-[160px] 3xl:pr-[200px]  4xl:pr-[240px] 5xl:pr-[285px] lg:pl-[60px] lg:col-span-3 items-center">
+          <div className="order-1 lg:order-2 rounded-lg py-[30px] lg:py-[45px]  xl:py-[60px]  3xl:py-[75px] 5xl:py-[85px] px-6  lg:pl-[60px] lg:col-span-3 items-center">
             <h2 className="lg:mb-8 mb-5 text-black text-[28px] lg:text-4xl font-bold">
               Give Us Feedback{" "}
             </h2>

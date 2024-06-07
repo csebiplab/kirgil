@@ -265,11 +265,11 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="mailto: serhatkirgil@gmail.com"
+                      href="mailto:Info@kirgil.ca"
                       className="footer-link items-center justify-center md:justify-start text-sm text-white"
                     >
                       <TfiEmail className="w-[21px] h-[21px]" />
-                      serhatkirgil@gmail.com
+                      Info@kirgil.ca
 
                     </Link>
                   </li>

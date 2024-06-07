@@ -5,7 +5,6 @@ import { MdArrowForwardIos } from "react-icons/md";
 
 import "./SelectionPreparation.css";
 
-
 import Image from "next/image";
 
 import { Navigation, Autoplay } from "swiper/modules";
@@ -38,10 +37,18 @@ const breakpoints = {
     spaceBetween: 20,
   },
   1280: {
-    slidesPerView: 5,
+    slidesPerView: 4,
     spaceBetween: 20,
   },
   1440: {
+    slidesPerView: 5,
+    spaceBetween: 20,
+  },
+  1536: {
+    slidesPerView: 5,
+    spaceBetween: 20,
+  },
+  1736: {
     slidesPerView: 6,
     spaceBetween: 20,
   },
@@ -124,16 +131,19 @@ const SelectionPreparation = () => {
       <div className="">
         <div className="container py-[34px] md:py-[54px]">
           <div className="flex flex-col items-center justify-center">
-              <div className="flex justify-center lg:justify-normal items-center">
-                <HeadingIcon text={headingIconText.selectionPreparation__IconTxt}/>
-              </div>
-              <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
-              Kirgil's Stucco Contractor <span className="text-primary">Do's and Don'ts</span>
-              </h3>
+            <div className="flex justify-center lg:justify-normal items-center">
+              <HeadingIcon
+                text={headingIconText.selectionPreparation__IconTxt}
+              />
+            </div>
+            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+              Kirgil's Stucco Contractor{" "}
+              <span className="text-primary">Do's and Don'ts</span>
+            </h3>
           </div>
 
           {/* taggle button */}
-          <div className="flex justify-center items-center mb-12 mx-2 ">
+          {/* <div className="flex justify-center items-center mb-12 mx-2 ">
             <label className="themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-3xl bg-white border border-primary">
               <input
                 type="checkbox"
@@ -175,9 +185,62 @@ const SelectionPreparation = () => {
                 Kirgil's Stucco Contractor Don'ts
               </span>
             </label>
+          </div> */}
+          <div className="flex justify-center items-center mb-12 mx-2">
+            <label className="themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-3xl bg-white border border-primary">
+              <input
+                type="checkbox"
+                className="sr-only"
+                checked={isChecked}
+                onChange={handleCheckboxChange}
+              />
+              <span
+                className={`flex items-center border pr-5 md:px-32 rounded-3xl lg:py-4 py-2 text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
+                  !isChecked ? "text-white bg-primary" : "text-primary"
+                }`}
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  className="mr-[6px] fill-current"
+                >
+                  <g clipPath="url(#clip0_3122_652)"></g>
+                  <defs>
+                    <clipPath id="clip0_3122_652">
+                      <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+                {/* Content for larger devices */}
+                <span className="hidden md:block">
+                  Our Stucco Contractor Do's
+                </span>
+                {/* Content for smaller devices */}
+                <span className="md:hidden">Do's</span>
+              </span>
+              <span
+                className={`flex items-center pr-5 md:px-32 rounded-3xl lg:py-4 py-2 text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
+                  isChecked ? "text-white bg-primary" : "text-primary"
+                }`}
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  className="mr-[6px] fill-current"
+                ></svg>
+                {/* Content for larger devices */}
+                <span className="hidden md:block">
+                  Kirgil's Stucco Contractor Don'ts
+                </span>
+                {/* Content for smaller devices */}
+                <span className="md:hidden">Don'ts</span>
+              </span>
+            </label>
           </div>
 
-          <div className="w-full h-[1px] bg-primary"/>
+          <div className="w-full h-[1px] bg-primary" />
 
           <div className="pt-[70px]">
             {!isChecked && (
@@ -196,10 +259,7 @@ const SelectionPreparation = () => {
                 className="!px-5 md:px-0 !overflow-hidden"
               >
                 {services.map((service, index) => (
-                  <SwiperSlide
-                    key={index}
-                    className=""
-                  >
+                  <SwiperSlide key={index} className="">
                     <div className="mx-auto w-[210px] h-[185px] cart px-4">
                       <div className="py-7">
                         <p className="mt-4 py-5 mx-auto text-white text-center text-lg font-bold">
@@ -209,8 +269,7 @@ const SelectionPreparation = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                <SwipButton/>
-
+                <SwipButton />
               </Swiper>
             )}
 
@@ -230,10 +289,7 @@ const SelectionPreparation = () => {
                 className="!px-5 md:px-0 !overflow-hidden"
               >
                 {services2.map((service, index) => (
-                  <SwiperSlide
-                    key={index}
-                    className=""
-                  >
+                  <SwiperSlide key={index} className="">
                     <div className="mx-auto w-[210px] h-[185px] cart px-4">
                       <div className=" py-7 ">
                         <p className="mt-4 py-5 mx-auto text-center text-white text-lg font-bold">
@@ -243,7 +299,7 @@ const SelectionPreparation = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                <SwipButton/>
+                <SwipButton />
               </Swiper>
             )}
           </div>

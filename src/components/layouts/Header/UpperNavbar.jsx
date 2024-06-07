@@ -35,7 +35,7 @@ const UpperNavbar = () => {
             />
             <a
               href="tel:416 996-2409"
-              className="text-white font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
+              className="text-white font-bold text-base"
             >
               416 996-2409
             </a>

@@ -75,9 +75,9 @@ const Header = () => {
               <div className="w-full sm:w-full lg:w-[250px] flex items-center justify-end  gap-x-6 md:gap-x-7 lg:gap-x-8">
                 <button
                   type="submit"
-                  className="flex justify-center items-center Large__Device__Btn py-2 px-3  font-semibold "
+                  className="flex justify-center items-center Large__Device__Btn py-2 px-3  font-bold "
                 >
-                  <span className="flex justify-center items-center gap-2 mr-2 text-white text-sm xl:text-base font-medium">
+                  <span className="flex justify-center items-center gap-2 mr-2 text-white text-sm xl:text-base font-bold">
                     Get Estimated
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
