@@ -23,9 +23,16 @@ const galImgs = [
   "/assets/gallery/Gallery_10.png",
   "/assets/gallery/Gallery_11.png",
   "/assets/gallery/Gallery_12.png",
+  "/assets/gallery/Gallery_13.png",
+  "/assets/gallery/Gallery_14.png",
 ];
 
 const galImgs2 = [
+  "/assets/gallery/Gallery_10.png",
+  "/assets/gallery/Gallery_11.png",
+  "/assets/gallery/Gallery_12.png",
+  "/assets/gallery/Gallery_13.png",
+  "/assets/gallery/Gallery_14.png",
   "/assets/gallery/Gallery_1.png",
   "/assets/gallery/Gallery_2.png",
   "/assets/gallery/Gallery_3.png",
@@ -35,9 +42,6 @@ const galImgs2 = [
   "/assets/gallery/Gallery_7.png",
   "/assets/gallery/Gallery_8.png",
   "/assets/gallery/Gallery_9.png",
-  "/assets/gallery/Gallery_10.png",
-  "/assets/gallery/Gallery_11.png",
-  "/assets/gallery/Gallery_12.png",
 ];
 
 const ProjectGallery = () => {

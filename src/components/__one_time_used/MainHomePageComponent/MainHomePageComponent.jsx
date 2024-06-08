@@ -4,21 +4,22 @@ import PartnerNRatings from "./PartnerNRatings/PartnerNRatings";
 import GiveUsFeedback from "./GiveUsFeedback/GiveUsFeedback"
 import OurServiceAreas from "./OurServiceAreas/OurServiceAreas";
 import ProjectUs from "./ProjectUs/ProjectUs";
-import BestServices from "./BestServices/BestServices";
-import OurExperience from "./OurExperience/OurExperience";
-import Quality from "./Quality/Quality";
-import TrustUs from "./TrustUs/TrustUs";
-import GeneralContractors from "./GeneralContractors/GeneralContractors";
-import KeyServices from "./KeyServices/KeyServices";
-import Services from "./Services/Services";
 import Review from "./Review/Review";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
-import ChoosetheRight from "./ChoosetheRight/ChoosetheRight";
+import ChoosesUs from "./ChoosesUs/ChoosesUs";
 import AboutUs from "./AboutUs/AboutUs";
 import WorkingProcess from "./WorkingProcess/WorkingProcess";
+import WorkWithUs from "./WorkWithUs/WorkWithUs";
+import ExteriorContractors from "./ExteriorContractors/ExteriorContractors";
 import ReadyToWork from "./ReadyToWork/ReadyToWork";
-import CostBudgeting from "./CostBudgeting/CostBudgeting";
-import FactorsToHiringUs from "./FactorsToHiringUs/FactorsToHiringUs";
+import FaqSection from "./FaqSection/FaqSection";
+import InstallationCompany from "./InstallationCompany/InstallationCompany";
+import RepairCompany from "./RepairCompany/RepairCompany";
+import ProjectDesigns from "./ProjectDesigns/ProjectDesigns";
+import Experienced from "./Experienced/Experienced";
+import Professional from "./Professional/Professional";
+import BestStuccoPainting from "./BestStuccoPainting/BestStuccoPainting";
+import SelectionPreparation from "./SelectionPreparation/SelectionPreparation";
 
 const MainHomePageComponent = () => {
   return (
@@ -32,24 +33,40 @@ const MainHomePageComponent = () => {
         <PartnerNRatings />
       </section>
 
-      {/* <section>
-        <BestServices/>
-      </section>
-
       <section>
         <AboutUs/>
       </section>
 
       <section>
-        <KeyServices/>
+        <InstallationCompany/>
       </section>
 
       <section>
-        <Services/>
+        <Experienced/>
       </section>
 
       <section>
-        <OurExperience/>
+        <ExteriorContractors/>
+      </section>
+
+      <section>
+        <Professional/>
+      </section>
+
+      <section>
+        <RepairCompany/>
+      </section>
+
+      <section>
+        <BestStuccoPainting/>
+      </section>
+
+      <section>
+        <SelectionPreparation/>
+      </section>
+
+      <section>
+        <ProjectDesigns/>
       </section>
 
       <section>
@@ -57,15 +74,23 @@ const MainHomePageComponent = () => {
       </section>
 
       <section>
-        <GeneralContractors/>
-      </section>
-
-      <section>
         <WorkingProcess/>
       </section>
 
       <section>
-        <Quality/>
+        <Review/>
+      </section>
+
+      {/* <section>
+        <ChoosesUs/>
+      </section>
+
+      <section>
+        <WorkWithUs/>
+      </section> */}
+
+      <section>
+        <FaqSection/>
       </section>
 
       <section>
@@ -73,24 +98,24 @@ const MainHomePageComponent = () => {
       </section>
 
       <section>
-        <CostBudgeting/>
+        <GiveUsFeedback/>
+      </section>
+
+      {/* 
+
+
+
+      <section>
+        <WorkWithUs/>
       </section>
 
       <section>
         <TrustUs/>
       </section>
 
-      <section>
-        <Review/>
-      </section>
+     
 
-      <section>
-        <FactorsToHiringUs/>
-      </section>
-
-      <section>
-        <ChoosetheRight/>
-      </section>
+      
 
       <section>
         <ProjectUs/>
@@ -100,9 +125,7 @@ const MainHomePageComponent = () => {
         <OurServiceAreas/>
       </section>
 
-      <section>
-        <GiveUsFeedback/>
-      </section> */}
+       */}
       
     </div>
   );

@@ -18,8 +18,8 @@ const navMenus = [
         subMenu: []
     },
     {
-        mainMenu: "Blog",
-        url: "/blog",
+        mainMenu: "Blogs",
+        url: "/blogs",
         subMenu: []
     },
     {
