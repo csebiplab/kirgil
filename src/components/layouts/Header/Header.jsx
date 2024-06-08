@@ -96,26 +96,26 @@ const Header = () => {
               </div> */}
 
               <div className="w-[200px] h-auto">
-              <div className="flex items-center justify-center gap-2 bg__color__nav__btn py-1 px-3">
-                <a
-                  href="tel:(416) 994-4597"
-                  className="text-white font-bold text-base"
-                >
-                  Get Estimated
-                </a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="9"
-                  height="13"
-                  viewBox="0 0 9 13"
-                  fill="none"
-                >
-                  <path
-                    d="M1.78711 0L0 1.61048L5.42578 6.5L0 11.3895L1.78711 13L9 6.5L1.78711 0Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
+                <div className="flex items-center justify-center gap-2 bg__color__nav__btn py-1 px-3">
+                  <a
+                    href="tel:(416) 994-4597"
+                    className="text-white font-bold text-base"
+                  >
+                    Get Estimated
+                  </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="13"
+                    viewBox="0 0 9 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.78711 0L0 1.61048L5.42578 6.5L0 11.3895L1.78711 13L9 6.5L1.78711 0Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -140,8 +140,8 @@ const Header = () => {
       <div className="w-full bg-white flex justify-between items-center px-[20px] sm:px-[30px] py-2 sm:py-2 lg:py-0">
         <div className="block lg:hidden">
           <Button className="small__nav__btn flex items-center gap-x-2">
-            <span className="text-white text-xs sm:text-base font-bold">
-              Click to Call
+            <span className="text-xs sm:text-base font-bold">
+              <Link href="tel:(416) 994-4597" className="text-white">Get Estimated</Link>
             </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +167,7 @@ const Header = () => {
               height={20}
             />
             <span className="text-white text-[10px] sm:text-base font-bold">
-              Click to Call
+              <Link href="tel:(416) 994-4597" className="text-white">Click to Call</Link>
             </span>
           </Button>
         </div>

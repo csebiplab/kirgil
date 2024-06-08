@@ -32,7 +32,7 @@ const ratingImgs = [
 const PartnerNRatings = () => {
   return (
     <div className="">
-      <div className="container flex justify-center w-full  z-50 ">
+      <div className="container flex justify-center w-full z-20 ">
         <div className="w-full mx-auto lg:px-0 px-[15px] md:px-[30px] mt-4 md:mt-0 lg:-mt-20 ">
 
 
