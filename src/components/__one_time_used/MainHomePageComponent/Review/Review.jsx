@@ -99,8 +99,8 @@ const Review = () => {
             breakpoints={breakpoints}
           >
             {reviews.map((test, i) => (
-              <SwiperSlide key={i}>
-                <div className=" bg-[#fff] rounded-lg shadow-md p-[16px] md:p-[12px]">
+              <SwiperSlide key={i} className="!h-auto !md:h-full">
+                <div className="!h-full bg-[#fff] rounded-lg shadow-md p-[16px] md:p-[12px]">
                   <div>
                     <Image
                       src="/assets/images/google.png"
