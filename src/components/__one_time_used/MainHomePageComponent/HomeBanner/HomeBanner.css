@@ -2,13 +2,7 @@
 .banner__section {
   position: relative;
   z-index: -1;
-  background: linear-gradient(
-    90deg,
-    #fff3fc 0%,
-    #fff3fc 40%,
-    rgba(255, 243, 252, 0) 60%,
-    rgba(255, 243, 252, 0) 100%
-  );
+  background: linear-gradient(90deg, #fff3fc 100%, #fff3fc 100%);
 }
 
 .banner__section::before {
@@ -30,16 +24,16 @@
 }
 
 .large__Device__Btn {
-  border-radius: 3px;
-  background: #FB9401;
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  background: linear-gradient(180deg, #ffc130 0%, #fb9401 100%);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* small device  */
 
 .small__device__btn {
   border-radius: 3px;
-  background: #FB9401;
+  background: #c99b4c;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -69,4 +63,17 @@
 .small__banner__section__content {
   position: relative;
   z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .banner__section::before {
+    background-image: none;
+    background: linear-gradient(
+      90deg,
+      #fff9ee 0%,
+      #fff9ee 40%,
+      rgba(255, 249, 238, 0) 60%,
+      rgba(255, 249, 238, 0) 100%
+    );
+  }
 }

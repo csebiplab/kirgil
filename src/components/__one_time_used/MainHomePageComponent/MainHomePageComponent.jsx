@@ -2,8 +2,6 @@
 import HomeBanner from "./HomeBanner/HomeBanner";
 import PartnerNRatings from "./PartnerNRatings/PartnerNRatings";
 import GiveUsFeedback from "./GiveUsFeedback/GiveUsFeedback"
-import OurServiceAreas from "./OurServiceAreas/OurServiceAreas";
-import ProjectUs from "./ProjectUs/ProjectUs";
 import Review from "./Review/Review";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import ChoosesUs from "./ChoosesUs/ChoosesUs";
@@ -101,31 +99,6 @@ const MainHomePageComponent = () => {
         <GiveUsFeedback/>
       </section>
 
-      {/* 
-
-
-
-      <section>
-        <WorkWithUs/>
-      </section>
-
-      <section>
-        <TrustUs/>
-      </section>
-
-     
-
-      
-
-      <section>
-        <ProjectUs/>
-      </section>
-
-      <section>
-        <OurServiceAreas/>
-      </section>
-
-       */}
       
     </div>
   );

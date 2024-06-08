@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaCanadianMapleLeaf } from "react-icons/fa";
 
 const TopNavbar = () => {
   return (
@@ -19,23 +20,24 @@ const TopNavbar = () => {
         </div>
 
         <div className="flex items-center gap-x-1">
-          <Image
+          {/* <Image
             src="/assets/socials/man.png"
             width={23}
             height={23}
             alt="email icon"
             className="w-[15px] 2xl:w-[17px] 3xl:w-[19px] 4xl:w-[21px] 5xl:w-[23px] h-auto 5xl:h-[23px]"
-          />
+          /> */}
+          <FaCanadianMapleLeaf/>
           <h5 className="text-[14px] text-black font-bold">
-            Best Contractor Company in Toronto
+          Stucco Contractor in Toronto
           </h5>
         </div>
 
         <div className="">
           <div className="flex justify-end items-center gap-1 4xl:gap-1.5 5xl:gap-2">
-            <h3 className="text-[14px] text-black font-bold">
+            <h5 className="text-[14px] text-black font-bold">
               Follow Us:
-            </h3>
+            </h5>
             <div className="flex items-center gap-x-2 2xl:gap-x-3 3xl:gap-x-4 4xl:gap-x-5 5xl:gap-x-6">
               <Image
                 src="/assets/socials/facebook.png"

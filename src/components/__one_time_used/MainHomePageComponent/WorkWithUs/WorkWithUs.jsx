@@ -6,8 +6,8 @@ import "./WorkWithUs.css";
 const WorkWithUs = () => {
   return (
     <div>
-      <div className=" container">
-        <div className=" grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px] 2xl:py-[100px] lg:py-[70px] py-[50px]">
+      <div className="container common__padding__top">
+        <div className=" grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
           <div className=" md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image

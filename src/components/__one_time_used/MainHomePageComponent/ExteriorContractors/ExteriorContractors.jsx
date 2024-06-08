@@ -6,15 +6,15 @@ import "./ExteriorContractors.css"
 const ExteriorContractors = () => {
   return (
     <div>
-      <div className=" container">
-        <div className=" grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px] 2xl:py-[100px] lg:py-[70px] py-[50px]">
+      <div className=" container common__padding__top">
+        <div className=" grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
           <div className="order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
                 src="/assets/images/Exterior_Contractors.png"
                 width={680}
                 height={495}
-                alt="about us image"
+                alt="Exterior_Contractors image"
                 className=""
               />
             </div>
@@ -24,7 +24,7 @@ const ExteriorContractors = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.exteriorContractors__IconTxt} />
             </div>
-            <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] font-bold text-dark md:text-start text-center">
+            <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] font-bold text-black md:text-start text-center">
             Exterior Stucco Contractors <br /> <span className="text-[#FB9401]"> Toronto</span>
 
             </h3>
