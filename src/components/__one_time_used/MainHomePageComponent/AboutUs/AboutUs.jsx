@@ -11,7 +11,7 @@ const AboutUs = () => {
           <div className=" md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/images/About_Us.png"
+                src="/assets/images/about_us.png"
                 width={680}
                 height={495}
                 alt="about us image"
