@@ -8,14 +8,14 @@ import "./GiveUsFeedback.css";
 
 export default function ContactHome() {
   return (
-    <div className="bg__color">
-      <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-6 items-center common__padding__top">
+    <div className="">
+      <div className="container common__padding__top">
+        <div className="grid grid-cols-1 lg:grid-cols-6 items-center">
           <div className="contact__us order-2 lg:order-1 py-[30px] lg:py-[50px] xl:py-[80px] 3xl:py-[100px] 5xl:py-[130px] md:pl-[60px] lg:pr-2 lg:col-span-3 text-white">
             <div className="">
-              <h2 className="text-[28px] md:text-4xl font-bold leading-normal text-black pb-[20px] text-center lg:text-left">
+              <h4 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-bold text-black text-center md:text-start">
                 Contact Us
-              </h2>
+              </h4>
               <div className="">
                 <a
                   href="address:1003 Caledonia Road Toronto, ON M6B 3Y9"
@@ -23,7 +23,7 @@ export default function ContactHome() {
                 >
                   <PiMapPinLineFill className="fill-black w-[29px] h-[29px]" />
                   <span className="text-black text-lg font-normal">
-                    1003 Caledonia Road Toronto, ON M6B 3Y9
+                    1003 Caledonia Road <br className="block md:hidden"/> Toronto, ON M6B 3Y9
                   </span>
                 </a>
               </div>
@@ -34,7 +34,7 @@ export default function ContactHome() {
                 >
                   <FaPhoneVolume className="fill-black w-[29px] h-[29px]" />
                   <span className="text-black text-lg font-normal">
-                    (416) 994-4597
+                  (416) 994-4597
                   </span>
                 </a>
               </div>
@@ -45,7 +45,7 @@ export default function ContactHome() {
                 >
                   <IoIosMail className="fill-black w-[29px] h-[29px]" />
                   <span className="text-black text-lg font-normal">
-                  Info@kirgil.ca
+                    Info@kirgil.ca
                   </span>
                 </a>
               </div>
@@ -58,9 +58,9 @@ export default function ContactHome() {
 
               <div className="flex justify-center lg:justify-start">
                 <div>
-                  <h4 className="text-black text-[25px] text-center md:text-left font-bold">
+                  <h6 className="text-black text-[25px] text-center md:text-left font-bold">
                     Best Construction Company Toronto
-                  </h4>
+                  </h6>
                   <div className="py-8">
                     <Image
                       src="/assets/logo/contact__Us__logo.png"
@@ -70,51 +70,51 @@ export default function ContactHome() {
                       className="w-[260px] h-[130px] mx-auto lg:mx-0"
                     />
                   </div>
-                  <h4 className="text-black text-[25px] font-bold text-center md:text-left">
+                  <h6 className="text-black text-[25px] font-bold text-center md:text-left">
                     KIRGIL CONSTRACTION INC
-                  </h4>
+                  </h6>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="order-1 lg:order-2 rounded-lg py-[30px] lg:py-[45px]  xl:py-[60px]  3xl:py-[75px] 5xl:py-[85px] px-6  lg:pl-[60px] lg:col-span-3 items-center">
-            <h2 className="lg:mb-8 mb-5 text-black text-[28px] lg:text-4xl font-bold">
+            <h4 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-bold text-black md:text-start text-center">
               Give Us Feedback{" "}
-            </h2>
+            </h4>
             <form action="#" className="space-y-4 ">
               <div>
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-8 mb-4">
                   <div>
                     {" "}
-                    <h5 className="mb-2 text-black text-[14px] md:text-lg font-normal">
+                    <p className="mb-2 text-black text-lg font-normal">
                       Your name *
-                    </h5>
-                    <label className="sr-only" htmlFor="email">
+                    </p>
+                    <label className="sr-only" htmlFor="name">
                       name
                     </label>
                     <input
-                      className="w-full field__style shadow-sm p-3 text-sm text-black"
-                      placeholder="Nav Sukhraj
+                      className="w-full field__style shadow-sm p-3 text-sm font-normal text-black"
+                      placeholder="Robot Fox
                       "
-                      type="email"
-                      id="email"
+                      type="text"
+                      id="name"
                     />
                   </div>
 
                   <div>
-                    <h5 className="mb-2 text-black text-[14px] md:text-lg font-normal">
+                    <p className="mb-2 text-black text-lg font-normal">
                       Email *
-                    </h5>
-                    <label className="sr-only" htmlFor="phone">
-                      Phone
+                    </p>
+                    <label className="sr-only" htmlFor="email">
+                      email
                     </label>
                     <input
-                      className="w-full field__style shadow-sm p-3 text-sm text-black"
-                      placeholder="infonational@yahoo.com
+                      className="w-full field__style shadow-sm p-3 text-sm font-normal text-black"
+                      placeholder="Info@kirgil.ca
                       "
-                      type="tel"
-                      id="phone"
+                      type="email"
+                      id="email"
                     />
                   </div>
                 </div>
@@ -122,30 +122,30 @@ export default function ContactHome() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:mb-8 mb-4">
                 <div>
-                  <h5 className="mb-2 text-black text-[14px] md:text-lg font-normal">
+                  <p className="mb-2 text-black text-lg font-normal">
                     Subjects *
-                  </h5>
-                  <label className="sr-only" htmlFor="email">
-                    Email
+                  </p>
+                  <label className="sr-only" htmlFor="subjects">
+                    subjects
                   </label>
                   <input
-                    className="w-full field__style shadow-sm p-3 text-sm text-black"
-                    placeholder="Subjects "
-                    type="email"
-                    id="email"
+                    className="w-full field__style shadow-sm p-3 text-sm font-normal text-black"
+                    placeholder="Subjects"
+                    type="text"
+                    id="subjects"
                   />
                 </div>
 
                 <div>
-                  <h5 className="mb-2 text-black text-[14px] md:text-lg font-normal">
+                  <p className="mb-2 text-black text-lg font-normal">
                     Your Phone *
-                  </h5>
+                  </p>
                   <label className="sr-only" htmlFor="phone">
                     Phone
                   </label>
                   <input
-                    className="w-full field__style shadow-sm p-3 text-sm text-black"
-                    placeholder="416-996-2409"
+                    className="w-full field__style shadow-sm p-3 text-sm font-normal text-black"
+                    placeholder="(416) 994-4597"
                     type="tel"
                     id="phone"
                   />
@@ -156,11 +156,9 @@ export default function ContactHome() {
                 <label className="sr-only" htmlFor="message">
                   Message
                 </label>
-                <h5 className="mb-2 text-black text-[14px] md:text-lg font-normal">
-                  Message *
-                </h5>
+                <p className="mb-2 text-black text-lg font-normal">Message *</p>
                 <textarea
-                  className="w-full field__style shadow-sm p-4 text-sm text-black"
+                  className="w-full field__style shadow-sm p-4 text-sm font-normal text-black"
                   placeholder="Write Message"
                   rows="6"
                   id="message"
@@ -172,17 +170,19 @@ export default function ContactHome() {
                   type="submit"
                   className="w-[200px] lg:w-[274px] rounded-md bg-primary px-6 lg:px-10 py-4 font-semibold flex justify-center items-center mt-0 lg:mt-10"
                 >
-                  <span className="mr-2 text-black">Submit</span>
+                  <span className="mr-2 text-base font-bold text-white">
+                    Submit
+                  </span>
                   <>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="18"
+                      width="17"
                       height="14"
-                      viewBox="0 0 18 14"
+                      viewBox="0 0 17 14"
                       fill="none"
                     >
                       <path
-                        d="M2.09344 2.35667L8.14595 4.86111L2.09344 4.08333V2.35667ZM8.14595 9.13889L2.09344 11.6433V9.91667L8.14595 9.13889ZM0.479431 0V5.44444L12.5845 7L0.479431 8.55556V14L17.4265 7L0.479431 0Z"
+                        d="M1.614 2.35667L7.66652 4.86111L1.614 4.08333V2.35667ZM7.66652 9.13889L1.614 11.6433V9.91667L7.66652 9.13889ZM0 0V5.44444L12.105 7L0 8.55556V14L16.947 7L0 0Z"
                         fill="white"
                       />
                     </svg>

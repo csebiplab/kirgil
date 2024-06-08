@@ -72,8 +72,8 @@ const Header = () => {
                   )}
                 </ul>
               </div>
-              <div className="w-full sm:w-full lg:w-[250px] flex items-center justify-end  gap-x-6 md:gap-x-7 lg:gap-x-8">
-                <button
+              {/* <div className="w-full sm:w-full lg:w-[250px] flex items-center justify-end  gap-x-6 md:gap-x-7 lg:gap-x-8">
+                <button href="(416) 994-4597"
                   type="submit"
                   className="flex justify-center items-center Large__Device__Btn py-2 px-3  font-bold "
                 >
@@ -93,6 +93,29 @@ const Header = () => {
                     </svg>
                   </span>
                 </button>
+              </div> */}
+
+              <div className="w-[200px] h-auto">
+              <div className="flex items-center justify-center gap-2 bg__color__nav__btn py-1 px-3">
+                <a
+                  href="tel:(416) 994-4597"
+                  className="text-white font-bold text-base"
+                >
+                  Get Estimated
+                </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="13"
+                  viewBox="0 0 9 13"
+                  fill="none"
+                >
+                  <path
+                    d="M1.78711 0L0 1.61048L5.42578 6.5L0 11.3895L1.78711 13L9 6.5L1.78711 0Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
               </div>
             </div>
           </div>
@@ -101,21 +124,20 @@ const Header = () => {
 
       {/* small device  */}
       <div className="block lg:hidden">
-          <div className="Top__Navbar__bg flex justify-center items-center gap-x-1 py-2">
-            <Image
-              src="/assets/socials/man.png"
-              width={23}
-              height={23}
-              alt="email icon"
-              className="w-[15px] 2xl:w-[17px] 3xl:w-[19px] 4xl:w-[21px] 5xl:w-[23px] h-auto 5xl:h-[23px]"
-            />
-            <h5 className="text-xs lg:text-[14px] text-black font-bold text-center">
-              Best Contractor Company in Toronto
-            </h5>
-          </div>
+        <div className="Top__Navbar__bg flex justify-center items-center gap-x-1 py-2">
+          <Image
+            src="/assets/socials/man.png"
+            width={23}
+            height={23}
+            alt="email icon"
+            className="w-[15px] 2xl:w-[17px] 3xl:w-[19px] 4xl:w-[21px] 5xl:w-[23px] h-auto 5xl:h-[23px]"
+          />
+          <h5 className="text-xs lg:text-[14px] text-black font-bold text-center">
+            Best Contractor Company in Toronto
+          </h5>
         </div>
+      </div>
       <div className="w-full bg-white flex justify-between items-center px-[20px] sm:px-[30px] py-2 sm:py-2 lg:py-0">
-        
         <div className="block lg:hidden">
           <Button className="small__nav__btn flex items-center gap-x-2">
             <span className="text-white text-xs sm:text-base font-bold">
