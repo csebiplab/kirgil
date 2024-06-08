@@ -136,7 +136,7 @@ const SelectionPreparation = () => {
                 text={headingIconText.selectionPreparation__IconTxt}
               />
             </div>
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+            <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-bold text-black text-center pb-[25px]">
               Kirgil's Stucco Contractor{" "}
               <span className="text-primary">Do's and Don'ts</span>
             </h3>
@@ -195,7 +195,7 @@ const SelectionPreparation = () => {
                 onChange={handleCheckboxChange}
               />
               <span
-                className={`flex items-center border pr-5 md:px-32 rounded-3xl lg:py-4 py-2 text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
+                className={`flex items-center border pr-5 md:px-32 rounded-3xl lg:py-3 py-2 text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
                   !isChecked ? "text-white bg-primary" : "text-primary"
                 }`}
               >
@@ -213,14 +213,24 @@ const SelectionPreparation = () => {
                   </defs>
                 </svg>
                 {/* Content for larger devices */}
-                <span className="hidden md:block">
+                <span
+                  className={`text-lg font-bold hidden md:block ${
+                    !isChecked ? "text-white bg-primary" : "text-primary"
+                  }`}
+                >
                   Our Stucco Contractor Do's
                 </span>
                 {/* Content for smaller devices */}
-                <span className="md:hidden">Do's</span>
+                <span
+                  className={`text-lg font-bold md:hidden ${
+                    !isChecked ? "text-white bg-primary" : "text-primary"
+                  }`}
+                >
+                  Do's
+                </span>
               </span>
               <span
-                className={`flex items-center pr-5 md:px-32 rounded-3xl lg:py-4 py-2 text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
+                className={`flex items-center pr-5 md:px-32 rounded-3xl lg:py-3 py-2 text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
                   isChecked ? "text-white bg-primary" : "text-primary"
                 }`}
               >
@@ -231,18 +241,43 @@ const SelectionPreparation = () => {
                   className="mr-[6px] fill-current"
                 ></svg>
                 {/* Content for larger devices */}
-                <span className="hidden md:block">
+                <span
+                  className={`text-lg font-bold hidden md:block ${
+                    isChecked ? "text-white bg-primary" : "text-primary"
+                  }`}
+                >
                   Kirgil's Stucco Contractor Don'ts
                 </span>
                 {/* Content for smaller devices */}
-                <span className="md:hidden">Don'ts</span>
+                <span
+                  className={`text-lg font-bold md:hidden ${
+                    isChecked ? "text-white bg-primary" : "text-primary"
+                  }`}
+                >
+                  Don'ts
+                </span>
               </span>
             </label>
           </div>
 
-          <div className="w-full h-[1px] bg-primary" />
+          <div className="w-full h-[2px] bg-primary" />
+          {/* large device  */}
+          <div className="hidden md:block">
+            <div className="flex justify-around ">
+              <div className="w-[2px] h-[70px] bg-primary" />
+              <div className="w-[2px] h-[70px] bg-primary" />
+              <div className="w-[2px] h-[70px] bg-primary" />
+              <div className="w-[2px] h-[70px] bg-primary" />
+            </div>
+          </div>
+          {/* small device  */}
+          <div className="block md:hidden">
+            <div className=" flex justify-center">
+              <div className="w-[2px] h-[70px] bg-primary" />
+            </div>
+          </div>
 
-          <div className="pt-[70px]">
+          <div className="">
             {!isChecked && (
               <Swiper
                 modules={[Navigation, Autoplay]}

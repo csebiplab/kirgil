@@ -52,7 +52,7 @@ const FaqSection = () => {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-    <div className="full__section_l_p common__padding__top">
+    <div className="full__section_l_p pr-3 md:pr-0 common__padding__top">
       <div className="grid grid-cols-1 md:grid-cols-6 md:gap-[28px] lg:gap-[30px] xl:gap-[32px] 2xl:gap-[34px] 3xl:gap-[36px] 4xl:gap-[38px] 5xl:gap-[40px]">
         <div className="md:col-span-3">
           <div className="flex flex-col justify-center items-start">
@@ -61,12 +61,12 @@ const FaqSection = () => {
             </div>
 
             <div>
-              <p className="text-[28px] md:text-[32px]  text-[#1F1F1F] mt-[10px] mb-[25px] font-semibold">
+              <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-bold text-black text-start pb-[25px]">
                 FAQs for Our <br />{" "}
                 <span className="text-primary">
                   Stucco Contractor Services in Toronto
                 </span>
-              </p>
+              </h3>
             </div>
           </div>
           <>
@@ -83,7 +83,7 @@ const FaqSection = () => {
                   <div
                     className={`text-white  border-b-0 transition-colors py-sm px-5`}
                   >
-                    <span className="text-white text-base md:text-lg font-bold">
+                    <span className="text-white text-lg font-bold">
                       {question}
                     </span>
                   </div>
@@ -102,7 +102,7 @@ const FaqSection = () => {
                     </svg>
                   </div>
                 </AccordionHeader>
-                <AccordionBody className="px-3 py-1 text-sm md:text-base font-normal bg-white text-black">
+                <AccordionBody className="px-3 py-1 text-lg font-normal bg-white text-black">
                   {answer}
                 </AccordionBody>
               </Accordion>

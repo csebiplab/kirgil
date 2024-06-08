@@ -77,14 +77,14 @@ const OurWorkingProcessSection = () => {
   return (
     <div className="container common__padding__top">
       <div className="">
-        <div className="text-center ">
+        <div className="text-center pb-4">
           <div className="flex justify-center gap-[54px]">
             <HeadingIcon text={headingIconText.workingProcess__IconTxt}/>
           </div>
-          <h2 className="text-[28px] md:text-[32px] font-bold text-primary mt-[15px]  md:pb-0 pb-[6px]">
+          <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-bold text-primary text-center">
           Streamlined Working Process <span className="text-black">of Our Contractors</span>
-          </h2>
-          <p className="lg:mt-[15px] mt-2 mb-4 lg:mb-[35px] text-base font-normal">
+          </h3>
+          <p className="text-lg font-normal text-center py-[10px]">
           Streamlining the working process of our contractors is crucial for enhancing efficiency and productivity. By implementing systematic procedures and utilizing technology effectively, we can optimize every stage of the workflow.
           </p>
         </div>
@@ -106,7 +106,7 @@ const OurWorkingProcessSection = () => {
         >
           {slideData.map((slideInfo, index) => (
             <SwiperSlide key={index} className={`px-[30px] md:px-0`}>
-              <div className="w-full card-sd bg-primary h-auto pt-4">
+              <div className="w-full card-sd bg-primary h-auto py-6">
                 <Image
                   src={slideInfo?.imgSrc}
                   width={72}
@@ -118,7 +118,7 @@ const OurWorkingProcessSection = () => {
                   <h4 className="text-[25px] font-bold py-1 md:py-2 text-center text-balck">
                     {slideInfo?.title}
                   </h4>
-                  <p className="text-base font-medium md:px-1 text-center text-black">
+                  <p className="text-lg font-normal md:px-1 text-center text-black">
                     {slideInfo?.description}
                   </p>
                 </div>

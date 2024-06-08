@@ -12,7 +12,7 @@ const ProjectDesigns = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.projectDesigns__IconTxt} />
             </div>
-            <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-[35px] font-bold text-dark md:text-start text-center">
+            <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-[35px] font-bold text-black md:text-start text-center">
               Elevating Every
               <br />{" "}
               <span className="text-primary"> Project Through Designs</span>
