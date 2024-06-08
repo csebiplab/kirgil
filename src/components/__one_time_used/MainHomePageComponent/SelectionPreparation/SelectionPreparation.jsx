@@ -29,29 +29,29 @@ const breakpoints = {
     spaceBetween: 20,
   },
   767: {
-    slidesPerView: 3,
-    spaceBetween: 20,
-  },
-  1024: {
     slidesPerView: 4,
     spaceBetween: 20,
   },
-  1280: {
-    slidesPerView: 4,
-    spaceBetween: 20,
-  },
-  1440: {
-    slidesPerView: 5,
-    spaceBetween: 20,
-  },
-  1536: {
-    slidesPerView: 5,
-    spaceBetween: 20,
-  },
-  1736: {
-    slidesPerView: 6,
-    spaceBetween: 20,
-  },
+  // 1024: {
+  //   slidesPerView: 4,
+  //   spaceBetween: 20,
+  // },
+  // 1280: {
+  //   slidesPerView: 4,
+  //   spaceBetween: 20,
+  // },
+  // 1440: {
+  //   slidesPerView: 5,
+  //   spaceBetween: 20,
+  // },
+  // 1536: {
+  //   slidesPerView: 5,
+  //   spaceBetween: 20,
+  // },
+  // 1736: {
+  //   slidesPerView: 6,
+  //   spaceBetween: 20,
+  // },
 };
 
 const services = [
@@ -143,49 +143,6 @@ const SelectionPreparation = () => {
           </div>
 
           {/* taggle button */}
-          {/* <div className="flex justify-center items-center mb-12 mx-2 ">
-            <label className="themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-3xl bg-white border border-primary">
-              <input
-                type="checkbox"
-                className="sr-only"
-                checked={isChecked}
-                onChange={handleCheckboxChange}
-              />
-              <span
-                className={`flex items-center border pr-5  lg:px-32 rounded-3xl lg:py-4 py-2  text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
-                  !isChecked ? "text-white bg-primary " : "text-primary"
-                }`}
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  className="mr-[6px] fill-current"
-                >
-                  <g clipPath="url(#clip0_3122_652)"></g>
-                  <defs>
-                    <clipPath id="clip0_3122_652">
-                      <rect width="16" height="16" fill="white"></rect>
-                    </clipPath>
-                  </defs>
-                </svg>
-                Our Stucco Contractor Do's
-              </span>
-              <span
-                className={`flex items-center pr-5 lg:px-32 rounded-3xl lg:py-4 py-2 text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
-                  isChecked ? "text-white bg-primary " : "text-primary"
-                }`}
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  className="mr-[6px] fill-current"
-                ></svg>
-                Kirgil's Stucco Contractor Don'ts
-              </span>
-            </label>
-          </div> */}
           <div className="flex justify-center items-center mb-12 mx-2">
             <label className="themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-3xl bg-white border border-primary">
               <input
