@@ -37,29 +37,34 @@ const breakpoints = {
 
 const reviews = [
   {
-    text: "Very satisfied!! This company helped with tile selection. Also installed laundry tub. Promptly responded. Met on time. Competed on time. Did a great job. Even on his hands and knees cleaning up the floor! Highly recommend.",
-    author: "Lisa Silva",
-    location: "North York",
+    text: "I would recommend Kirgil Stucco Design Inc and his team without hesitation. I'm pleased with how the stucco work turned out on my 3 dormers. The Serhat was helpful, organized and professional. Great people to work with!",
+    author: "Steve Jarman",
+    location: "Toronto",
   },
   {
-    text: "I hired this contractor to renovate my washroom, I was very satisfied with the quality of workmanship I received. My job was done in the time frame that was agreed upon. I trusted him with my budget and he delivered great work.",
-    author: "Lisa Silva",
-    location: "North York",
+    text: "Kirgil Stucco Design Inc was professional, efficient and knowledgeable about their products. Staff was very helpful in assisting us choosing a colour and style that would help our vision come to life.",
+    author: "Jason Bauman",
+    location: "Toronto",
   },
   {
-    text: "Nav and his team just completed renovations in my 2 bathrooms and kitchen. Their work is fantastic - from start to finish -Nav took the time to advise and explain options to us - attention to every little detail was perfect! Could not be happier with the work - thank you for everything !",
-    author: "Lisa Silva",
-    location: "North York",
+    text: "Serhat and his did a fabulous job of installing stucco boxes around our upper floor windows, replacing the very old aluminium sidings. Serhat was friendly, professional, and went the extra mile to make sure that we were happy with the results. We highly recommend Kirgil Stucco Design Inc for work!",
+    author: "Kelley Stamm",
+    location: "Toronto",
   },
   {
-    text: "My old deck was small and sinking on one corner and looked awful. Thanks Nav for your guidance in making decisions on the redesign. It looks great. Love having more outdoor entertaining space. You and your guys did a great job which was completed in a day.",
-    author: "Lisa Silva",
-    location: "North York",
+    text: "They are great. Friendly, show up on time, no delays in their work, they work quick, the quality of work is top notch, you can tell they are professionals that have been doing this a long time.",
+    author: "dawn duprey",
+    location: "Toronto",
   },
   {
-    text: "Very satisfied!! This company helped with tile selection. Also installed laundry tub. Promptly responded. Met on time. Competed on time. Did a great job. Even on his hands and knees cleaning up the floor! Highly recommend.",
-    author: "Lisa Silva",
-    location: "North York",
+    text: "Reliable, affordable price at high quality work for my home repair, he explained why is there cracks on the foundation walls and how to avoid the water in the basement for future problems , it was great service, thanks Serhat!",
+    author: "Vicki Burns",
+    location: "Toronto",
+  },
+  {
+    text: "He absolutely knows what he does, reliable and good quality stucco work , his team was very nice to other neighbours and he did nice and clean job for me , would highly recommend it .",
+    author: "I. Harding",
+    location: "Toronto",
   }
 ];
 

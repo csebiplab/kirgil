@@ -34,7 +34,7 @@ export default function ContactHome() {
                 >
                   <FaPhoneVolume className="fill-black w-[29px] h-[29px]" />
                   <span className="text-black text-lg font-normal">
-                    (416) 994-4597
+                  (416) 994-4597
                   </span>
                 </a>
               </div>
@@ -145,7 +145,7 @@ export default function ContactHome() {
                   </label>
                   <input
                     className="w-full field__style shadow-sm p-3 text-sm font-normal text-black"
-                    placeholder="416-996-2409"
+                    placeholder="(416) 994-4597"
                     type="tel"
                     id="phone"
                   />
