@@ -65,8 +65,8 @@ const ProjectGallery = () => {
   };
 
   return (
-    <div className="bg-[#FFF9EE]">
-      <div className="custom-container common__padding__top">
+    <div className="">
+      <div className="custom-containe common__padding__top">
         <div className="">
           <div className="flex flex-col justify-center items-center">
             <HeadingIcon text={headingIconText.gallery__IconTxt} />

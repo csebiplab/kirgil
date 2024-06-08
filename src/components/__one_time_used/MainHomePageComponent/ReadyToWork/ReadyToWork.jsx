@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const ReadyToWork = () => {
   return (
-    <div className="bg__color">
-      <div className="full__section_r_p">
-        <div className=" grid md:grid-cols-7 grid-cols-1 md:gap-[30px] common__padding__top">
+    <div className="">
+      <div className="full__section_r_p common__padding__top">
+        <div className=" grid md:grid-cols-7 grid-cols-1 md:gap-[30px]">
           <div className="md:col-span-4 flex items-center ">
             <div className="">
               <Image

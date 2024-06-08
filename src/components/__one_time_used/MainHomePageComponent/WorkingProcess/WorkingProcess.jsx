@@ -75,8 +75,8 @@ const slideData = [
 
 const OurWorkingProcessSection = () => {
   return (
-    <div className="container">
-      <div className="lg:py-[44px] py-8">
+    <div className="container common__padding__top">
+      <div className="">
         <div className="text-center ">
           <div className="flex justify-center gap-[54px]">
             <HeadingIcon text={headingIconText.workingProcess__IconTxt}/>

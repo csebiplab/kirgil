@@ -8,9 +8,9 @@ import "./GiveUsFeedback.css";
 
 export default function ContactHome() {
   return (
-    <div className="bg__color">
-      <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-6 items-center common__padding__top">
+    <div className="">
+      <div className="container common__padding__top">
+        <div className="grid grid-cols-1 lg:grid-cols-6 items-center">
           <div className="contact__us order-2 lg:order-1 py-[30px] lg:py-[50px] xl:py-[80px] 3xl:py-[100px] 5xl:py-[130px] md:pl-[60px] lg:pr-2 lg:col-span-3 text-white">
             <div className="">
               <h2 className="text-[28px] md:text-4xl font-bold leading-normal text-black pb-[20px] text-center lg:text-left">

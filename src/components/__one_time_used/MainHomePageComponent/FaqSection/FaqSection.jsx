@@ -52,75 +52,71 @@ const FaqSection = () => {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-    <div>
-      <div>
-        <div className="full__section_l_p 3xl:py-[120px] lg:py-[100px] py-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-6 md:gap-[28px] lg:gap-[30px] xl:gap-[32px] 2xl:gap-[34px] 3xl:gap-[36px] 4xl:gap-[38px] 5xl:gap-[40px]">
-            <div className="md:col-span-3">
-              <div className="flex flex-col justify-center items-start">
-                <div>
-                  <HeadingIcon text={headingIconText.faq__IconTxt} />
-                </div>
-
-                <div>
-                  <p className="text-[28px] md:text-[32px]  text-[#1F1F1F] mt-[10px] mb-[25px] font-semibold">
-                    FAQs for Our <br />{" "}
-                    <span className="text-primary">
-                      Stucco Contractor Services in Toronto
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <>
-                {faqQuestionsNAns.map(({ question, answer, id }, idx) => (
-                  <Accordion
-                    key={id}
-                    open={open === id}
-                    className="mb-1 text-white bg-primary"
-                  >
-                    <AccordionHeader
-                      onClick={() => handleOpen(id)}
-                      className=" relative"
-                    >
-                      <div
-                        className={`text-white  border-b-0 transition-colors py-sm px-5`}
-                      >
-                        <span className="text-white text-base md:text-lg font-bold">
-                          {question}
-                        </span>
-                      </div>
-                      <div className="absolute right-3">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="9"
-                          viewBox="0 0 16 9"
-                          fill="none"
-                        >
-                          <path
-                            d="M7.85438 8.80353L0.908939 1.3452C0.432523 0.833597 0.795322 -9.06148e-07 1.4944 -8.7698e-07L14.5803 -3.30987e-07C15.2793 -3.01819e-07 15.6421 0.833599 15.1657 1.3452L8.22029 8.80353C8.12142 8.9097 7.95324 8.9097 7.85438 8.80353Z"
-                            fill="white"
-                          />
-                        </svg>
-                      </div>
-                    </AccordionHeader>
-                    <AccordionBody className="px-3 py-1 text-sm md:text-base font-normal bg-white text-black">
-                      {answer}
-                    </AccordionBody>
-                  </Accordion>
-                ))}
-              </>
+    <div className="full__section_l_p common__padding__top">
+      <div className="grid grid-cols-1 md:grid-cols-6 md:gap-[28px] lg:gap-[30px] xl:gap-[32px] 2xl:gap-[34px] 3xl:gap-[36px] 4xl:gap-[38px] 5xl:gap-[40px]">
+        <div className="md:col-span-3">
+          <div className="flex flex-col justify-center items-start">
+            <div>
+              <HeadingIcon text={headingIconText.faq__IconTxt} />
             </div>
-            <div className="md:col-span-3">
-              <Image
-                src="/assets/images/FAQ.png"
-                alt="faq"
-                width={764}
-                height={558}
-                className="w-[764px] h-[558px]"
-              />
+
+            <div>
+              <p className="text-[28px] md:text-[32px]  text-[#1F1F1F] mt-[10px] mb-[25px] font-semibold">
+                FAQs for Our <br />{" "}
+                <span className="text-primary">
+                  Stucco Contractor Services in Toronto
+                </span>
+              </p>
             </div>
           </div>
+          <>
+            {faqQuestionsNAns.map(({ question, answer, id }, idx) => (
+              <Accordion
+                key={id}
+                open={open === id}
+                className="mb-1 text-white bg-primary"
+              >
+                <AccordionHeader
+                  onClick={() => handleOpen(id)}
+                  className=" relative"
+                >
+                  <div
+                    className={`text-white  border-b-0 transition-colors py-sm px-5`}
+                  >
+                    <span className="text-white text-base md:text-lg font-bold">
+                      {question}
+                    </span>
+                  </div>
+                  <div className="absolute right-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="9"
+                      viewBox="0 0 16 9"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.85438 8.80353L0.908939 1.3452C0.432523 0.833597 0.795322 -9.06148e-07 1.4944 -8.7698e-07L14.5803 -3.30987e-07C15.2793 -3.01819e-07 15.6421 0.833599 15.1657 1.3452L8.22029 8.80353C8.12142 8.9097 7.95324 8.9097 7.85438 8.80353Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </AccordionHeader>
+                <AccordionBody className="px-3 py-1 text-sm md:text-base font-normal bg-white text-black">
+                  {answer}
+                </AccordionBody>
+              </Accordion>
+            ))}
+          </>
+        </div>
+        <div className="md:col-span-3">
+          <Image
+            src="/assets/images/FAQ.png"
+            alt="faq"
+            width={764}
+            height={558}
+            className="w-[764px] h-[558px]"
+          />
         </div>
       </div>
     </div>

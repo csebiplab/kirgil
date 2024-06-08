@@ -6,8 +6,8 @@ import "./RepairCompany.css";
 const RepairCompany = () => {
   return (
     <div>
-      <div className="full__section_l_p">
-        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px] 2xl:py-[100px] lg:py-[70px] py-[50px]">
+      <div className="full__section_l_p common__padding__top">
+        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
         <div className="md:col-span-3">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.repairCompany__IconTxt} />

@@ -127,9 +127,9 @@ const SelectionPreparation = () => {
   };
 
   return (
-    <div className="!overflow-hidden">
+    <div className="!overflow-hidden common__padding__top">
       <div className="">
-        <div className="container py-[34px] md:py-[54px]">
+        <div className="container">
           <div className="flex flex-col items-center justify-center">
             <div className="flex justify-center lg:justify-normal items-center">
               <HeadingIcon

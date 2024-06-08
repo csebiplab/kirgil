@@ -65,8 +65,8 @@ const reviews = [
 
 const Review = () => {
   return (
-    <div className="bg-[#FFF9EE] ">
-      <div className="  container">
+    <div className="">
+      <div className="container common__padding__top">
         <div className="">
           <div className=" flex flex-col justify-center items-center ">
             <HeadingIcon text={headingIconText.reviews__IconTxt} />
