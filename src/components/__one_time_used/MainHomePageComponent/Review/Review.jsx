@@ -73,7 +73,7 @@ const Review = () => {
 
             <div>
               <h3 className="mt-4 lg:mb-[25px] mb-[15px] text-[28px] md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center font-medium">
-              Reviews Of <span className="text-primary">General Contractors</span>
+              Review from  <span className="text-primary">Clients</span>
               </h3>
             </div>
           </div>

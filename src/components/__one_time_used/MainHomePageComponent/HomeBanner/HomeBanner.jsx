@@ -63,9 +63,9 @@ const HomeBanner = () => {
               Toronto's top stucco contractor, Kirgil Stucco Design specializes
               in exceptional stone and stucco services for all your needs.
             </p>
-            <div className="w-full flex items-center justify-center md:justify-start pl-[30px] pt-[25px]">
+            <div className="w-full flex items-center justify-start pl-[30px] pt-[25px]">
               <Button className="small__device__btn gap-x-2">
-                <span className="flex justify-center items-center gap-2 text-white text-xs font-bold">
+                <span className="flex justify-start items-center gap-2 text-white text-xs font-bold">
                   Get Estimated
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
