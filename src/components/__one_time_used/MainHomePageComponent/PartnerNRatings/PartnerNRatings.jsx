@@ -32,8 +32,8 @@ const ratingImgs = [
 const PartnerNRatings = () => {
   return (
     <div className="">
-      <div className="container flex justify-center w-full z-20 ">
-        <div className="w-full mx-auto lg:px-0 px-[15px] md:px-[30px] mt-4 md:mt-0 lg:-mt-20 ">
+      <div className="container flex justify-center w-full common__padding__top z-50">
+        <div className="w-full mx-auto lg:px-0 px-[15px] md:px-[30px] -mt-8 md:-mt-10">
 
 
           <div className="bg-[#FFf] lg:rounded-xl  px-4 py-4  mx-auto border-2 ">

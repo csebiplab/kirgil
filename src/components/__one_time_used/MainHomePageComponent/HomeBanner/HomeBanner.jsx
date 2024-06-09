@@ -14,7 +14,7 @@ const HomeBanner = () => {
               #1 Stucco Contractor <br />
               <span className="text-primary">in Toronto</span>
             </h1>
-            <p className="text-lg hover:text-red-500 lg:text-[25px] font-normal text-left leading-[30px] lg:leading-[40px] pt-2">
+            <p className="text-lg lg:text-[25px] font-normal text-left leading-[30px] lg:leading-[40px] pt-2">
               Toronto's top stucco contractor, Kirgil Stucco Design
               specializes in exceptional stone and stucco services for all
               your needs.
@@ -22,7 +22,7 @@ const HomeBanner = () => {
             <div className="flex justify-start py-6">
               <Link href="tel:(416) 994-4597" className="text-white cursor-pointer">
                 <button
-                  type="submit"
+                  type="button"
                   className="flex justify-center items-center w-[190px] large__Device__Btn p-3  font-semibold "
                 >
                   <span className="text-white flex justify-center items-center gap-2 mr-2 text-base font-bold">
