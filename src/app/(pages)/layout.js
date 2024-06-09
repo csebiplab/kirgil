@@ -5,6 +5,7 @@ import { Montserrat } from "next/font/google";
 import dbConnect from "@/lib/db.connect";
 import homeRouteMetaData from "@/models/homeMetaDataFile";
 import verificationSite from "@/models/siteVerification";
+import ScrollToTopComponent from "@/common/ScrollToTop";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -71,6 +72,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <ScrollToTopComponent/>
       </body>
     </html>
   );

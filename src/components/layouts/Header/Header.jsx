@@ -8,6 +8,7 @@ import { UtilsModule } from "@/utils/nav-menus";
 import logo from "../../../../public/assets/logo/navbar__logo.png";
 import TopNavbar from "./TopNavbar";
 import { Button } from "@material-tailwind/react";
+import { FaCanadianMapleLeaf } from "react-icons/fa";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -30,7 +31,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50">
       <nav className="py-0 lg:py-1 main__header">
-        <div className="">
+        <div className={`${isVisible ? "" : "hidden"}`}>
           <TopNavbar />
         </div>
         <div className=" pl-6 md:pl-8 lg:pl-24 xl:pl-28 2xl:pl-32 3xl:pl-40 4xl:pl-52 5xl:pl-[285px] flex items-center gap-x-4 xl:gap-x-8 2xl:gap-x-12 3xl:gap-x-16 4xl:gap-x-20 5xl:gap-x-[90px]">
@@ -96,26 +97,26 @@ const Header = () => {
               </div> */}
 
               <div className="w-[200px] h-auto">
-              <div className="flex items-center justify-center gap-2 bg__color__nav__btn py-1 px-3">
-                <a
-                  href="tel:(416) 994-4597"
-                  className="text-white font-bold text-base"
-                >
-                  Get Estimated
-                </a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="9"
-                  height="13"
-                  viewBox="0 0 9 13"
-                  fill="none"
-                >
-                  <path
-                    d="M1.78711 0L0 1.61048L5.42578 6.5L0 11.3895L1.78711 13L9 6.5L1.78711 0Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
+                <div className="flex items-center justify-center gap-2 bg__color__nav__btn py-1 px-3">
+                  <a
+                    href="tel:(416) 994-4597"
+                    className="text-white font-bold text-base"
+                  >
+                    Get Estimated
+                  </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="13"
+                    viewBox="0 0 9 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.78711 0L0 1.61048L5.42578 6.5L0 11.3895L1.78711 13L9 6.5L1.78711 0Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -124,24 +125,31 @@ const Header = () => {
 
       {/* small device  */}
       <div className="block lg:hidden">
-        <div className="Top__Navbar__bg flex justify-center items-center gap-x-1 py-2">
-          <Image
+        <div
+          className={`Top__Navbar__bg flex justify-center items-center gap-x-1 py-2 ${
+            isVisible ? "" : "hidden"
+          }`}
+        >
+          {/* <Image
             src="/assets/socials/man.png"
             width={23}
             height={23}
             alt="email icon"
             className="w-[15px] 2xl:w-[17px] 3xl:w-[19px] 4xl:w-[21px] 5xl:w-[23px] h-auto 5xl:h-[23px]"
-          />
-          <h5 className="text-xs lg:text-[14px] text-black font-bold text-center">
-            Best Contractor Company in Toronto
+          /> */}
+          <FaCanadianMapleLeaf />
+          <h5 className="text-[14px] text-black font-bold">
+            Stucco Contractor in Toronto
           </h5>
         </div>
       </div>
       <div className="w-full bg-white flex justify-between items-center px-[20px] sm:px-[30px] py-2 sm:py-2 lg:py-0">
         <div className="block lg:hidden">
           <Button className="small__nav__btn flex items-center gap-x-2">
-            <span className="text-white text-xs sm:text-base font-bold">
-              Click to Call
+            <span className="text-xs sm:text-base font-bold">
+              <Link href="tel:(416) 994-4597" className="text-white">
+                Get Estimated
+              </Link>
             </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +175,9 @@ const Header = () => {
               height={20}
             />
             <span className="text-white text-[10px] sm:text-base font-bold">
-              Click to Call
+              <Link href="tel:(416) 994-4597" className="text-white">
+                Click to Call
+              </Link>
             </span>
           </Button>
         </div>
