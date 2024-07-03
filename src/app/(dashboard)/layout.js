@@ -13,8 +13,8 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata = {
-    title: "National Remodelling Dashboard",
-    description: "National Remodelling Dashboard",
+    title: "Kirgil Dashboard",
+    description: "Kirgil Dashboard",
 };
 
 export default async function DashboardLayout({ children }) {
