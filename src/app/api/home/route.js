@@ -32,7 +32,7 @@ export async function GET() {
 
 export async function DELETE(request) {
   const id = request.nextUrl.searchParams.get("id");
-  await connectMongoDB();
+  await dbConnect();
   await homeRouteMetaData.findByIdAndDelete(id);
   return NextResponse.json(
     { message: "Blog route meta deleted" },

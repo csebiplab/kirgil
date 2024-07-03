@@ -2,68 +2,75 @@ import Footer from "@/components/layouts/Footer/Footer";
 import "./globals.css";
 import Header from "@/components/layouts/Header/Header";
 import { Montserrat } from "next/font/google";
-import dbConnect from "@/lib/db.connect";
-import homeRouteMetaData from "@/models/homeMetaDataFile";
-import verificationSite from "@/models/siteVerification";
 import ScrollToTopComponent from "@/common/ScrollToTop";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
-
-export async function generateMetadata() {
-
+function extractGoogleConsoleKey(verificationData) {
   try {
+    const metaTagContent = verificationData?.title;
+    if (!metaTagContent) return "";
 
-    await dbConnect();
-    const homeMetaData = await homeRouteMetaData.find();
-    const googleVerificationData = await verificationSite.find();
+    const parts = metaTagContent.split(" ");
+    if (parts.length < 3) return "";
 
-    const googleConsoleKey = extractGoogleConsoleKey(googleVerificationData);
-
-    const {
-      title = "General Contractors in Toronto | National Remodelling",
-      description = "Top-rated general contractors in Toronto for expert home renovations, bathroom renovations, kitchen renovations and construction projects",
-      keywords = "General contractors in Toronto",
-
-    } = homeMetaData?.[0] || {};
-
-    return {
-      title,
-      description,
-      keywords,
-      verification: {
-        google: googleConsoleKey,
-      }
-    };
-  } catch (error) {
-    console.error('Error fetching metadata:', error);
-    return {
-      title: "General Contractors in Toronto | National Remodelling",
-      description: "Top-rated general contractors in Toronto for expert home renovations, bathroom renovations, kitchen renovations and construction projects",
-      keywords: "General contractors in Toronto",
-    };
-  }
-}
-
-function extractGoogleConsoleKey(googleVerificationData) {
-  try {
-    // const { verificationUrl } = googleVerification ?? {};
-    if (!googleVerificationData || !googleVerificationData[0]?.title) return "";
-
-
-    const metaTagContent = googleVerificationData[0].title;
-    const consoleKey = metaTagContent.split("=").pop().slice(1, -4);
-    return consoleKey;
-
-
+    const consoleKeyPart = parts[2].split("=")[1];
+    return consoleKeyPart.slice(1, -1);
   } catch (error) {
     console.error('Error extracting Google console key:', error);
     return "";
   }
 }
 
+const staticMeta = {
+  title: "General Contractors | Kirgil",
+  description: "Top-rated general contractors for expert home renovations, bathroom renovations, kitchen renovations and construction projects",
+  keywords: "General contractors",
+}
+
+export async function generateMetadata() {
+  try {
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+    const metaDataResponse = await fetch(`${apiUrl}/api/home`, {
+      cache: "no-store",
+    });
+    const metaData = await metaDataResponse.json();
+    const { title, description, keywords } = metaData?.homeRouteAllMetaData?.[0] ?? {};
+
+    const googleVerificationResponse = await fetch(`${apiUrl}/api/verificationUrl`, {
+      cache: "no-store",
+    });
+    const googleVerification = await googleVerificationResponse.json();
+    const googleConsoleKey = extractGoogleConsoleKey(googleVerification?.verificationUrl?.[0]);
+
+
+    if (!title || !description || !keywords) return staticMeta;
+
+    if ((title || description || keywords) && !googleConsoleKey) {
+      return {
+        title,
+        description,
+        keywords
+      }
+    }
+
+    if ((title || description || keywords) && googleConsoleKey) {
+      return {
+        ...staticMeta, verification: {
+          google: googleConsoleKey,
+        }
+      }
+    }
+
+
+  } catch (error) {
+    console.error('Error generating metadata:', error);
+    return staticMeta;
+  }
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -72,7 +79,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        <ScrollToTopComponent/>
+        <ScrollToTopComponent />
       </body>
     </html>
   );
